@@ -1,0 +1,41 @@
+import { Navbar } from './components/layout/Navbar';
+import { Hero } from './components/sections/Hero';
+import { About } from './components/sections/About';
+import { Skills } from './components/sections/Skills';
+import { Experience } from './components/sections/Experience';
+import { Leadership } from './components/sections/Leadership';
+import { Certifications } from './components/sections/Certifications';
+import { Contact } from './components/sections/Contact';
+
+function App() {
+  return (
+    <div className="bg-charcoal-900 min-h-screen text-gray-100 selection:bg-emerald-500/30">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Leadership />
+        <Certifications />
+        <Contact />
+      </main>
+
+      <footer className="py-12 border-t border-white/5 bg-charcoal-900">
+        <div className="section-container">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="text-gray-500 text-sm">
+              © {new Date().getFullYear()} KARUPPASAMY M. All rights reserved. Built with React & Tailwind CSS.
+            </div>
+            <div className="flex gap-8 items-center">
+              <a href="#" className="text-gray-500 hover:text-emerald-500 transition-colors">Privacy Policy</a>
+              <a href="#" className="text-gray-500 hover:text-emerald-500 transition-colors">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
