@@ -49,6 +49,14 @@ const certifications = [
         link: '/certificates/HCL GUVI Certification - 1h6nM1sg71C5972067.png',
         icon: ShieldCheck,
         color: 'from-blue-500/20 to-blue-600/20'
+    },
+    {
+        title: '5-Day AI Agents Intensive Course',
+        issuer: 'Google Cloud / technical Excellence',
+        date: '2025',
+        link: '/certificates/5-Day AI Agents Intensive Course with Google.png',
+        icon: Award,
+        color: 'from-emerald-500/20 to-emerald-600/20'
     }
 ];
 
