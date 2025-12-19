@@ -1,13 +1,15 @@
 
 import { motion } from 'framer-motion';
 import { GraduationCap, Award, Zap, Users } from 'lucide-react';
+import profilePic from '../../assets/profil.jpeg';
+import { portfolioData } from '../../data/portfolioData';
 
-const stats = [
-    { label: 'Technical Depth', value: 'High', icon: GraduationCap },
-    { label: 'Learning Velocity', value: 'Rapid', icon: Zap },
-    { label: 'Leadership', value: 'Core', icon: Users },
-    { label: 'Projects', value: '10+', icon: Award },
-];
+const iconMap: Record<string, any> = {
+    'Technical Depth': GraduationCap,
+    'Learning Velocity': Zap,
+    'Leadership': Users,
+    'Projects': Award,
+};
 
 export const About = () => {
     return (
@@ -28,12 +30,10 @@ export const About = () => {
                         </h3>
                         <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
                             <p>
-                                As a Computer Engineering graduate, I’ve built a solid foundation in computer science
-                                principles. My journey is defined by a relentless drive to solve complex problems using
-                                intelligent systems and scalable architectures.
+                                {portfolioData.personal.bio}
                             </p>
                             <p>
-                                During my internship at <span className="text-white font-medium">Novi Tech Company</span>,
+                                During my internship at <span className="text-white font-medium">{portfolioData.experience[0].company}</span>,
                                 I specialized in AI, ML, and Data Visualization, where I learned to transform raw data
                                 into actionable insights and deploy machine learning models that deliver real value.
                             </p>
@@ -45,17 +45,20 @@ export const About = () => {
                         </div>
 
                         <div className="grid grid-cols-2 gap-6 mt-12">
-                            {stats.map((stat, i) => (
-                                <div key={i} className="flex items-center gap-4">
-                                    <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
-                                        <stat.icon className="w-6 h-6 text-emerald-500" />
+                            {portfolioData.stats.map((stat, i) => {
+                                const Icon = iconMap[stat.label] || Award;
+                                return (
+                                    <div key={i} className="flex items-center gap-4">
+                                        <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
+                                            <Icon className="w-6 h-6 text-emerald-500" />
+                                        </div>
+                                        <div>
+                                            <p className="text-sm text-gray-500">{stat.label}</p>
+                                            <p className="text-xl font-bold font-display">{stat.value}</p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500">{stat.label}</p>
-                                        <p className="text-xl font-bold font-display">{stat.value}</p>
-                                    </div>
-                                </div>
-                            ))}
+                                );
+                            })}
                         </div>
                     </motion.div>
 
@@ -66,23 +69,48 @@ export const About = () => {
                         transition={{ duration: 0.8 }}
                         className="relative"
                     >
-                        <div className="aspect-square rounded-2xl overflow-hidden glass relative z-10 p-2">
-                            {/* Note to User: Replace with actual professional photo */}
-                            <div className="w-full h-full bg-gradient-to-br from-charcoal-800 to-emerald-900/20 rounded-xl flex items-center justify-center border border-white/5">
-                                <div className="text-center">
-                                    <div className="w-48 h-48 mx-auto rounded-full bg-charcoal-900 border-2 border-emerald-500/50 flex items-center justify-center mb-6">
-                                        <span className="text-4xl font-bold text-emerald-500">K</span>
-                                    </div>
-                                    <p className="text-emerald-500/50 font-display">Professional Avatar Placeholder</p>
+                        <div className="relative group max-w-sm mx-auto">
+                            {/* Animated Background Rings */}
+                            <div className="absolute -inset-4 bg-gradient-to-tr from-emerald-500/20 to-cyan-500/20 rounded-full blur-2xl group-hover:opacity-75 transition duration-500" />
+
+                            <div className="relative aspect-square rounded-full overflow-hidden glass p-3 border border-white/10">
+                                <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent" />
+
+                                <div className="relative w-full h-full rounded-full overflow-hidden bg-charcoal-900 border border-white/5">
+                                    <img
+                                        src={profilePic}
+                                        alt="Profile"
+                                        className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-110 hover:scale-100"
+                                    />
+
+                                    {/* Overlay Gradient */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/80 via-transparent to-transparent opacity-60" />
                                 </div>
                             </div>
+
+                            {/* Experience Badge */}
+                            <motion.div
+                                initial={{ opacity: 0, x: 20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.5 }}
+                                className="absolute -bottom-6 -right-6 glass p-4 rounded-2xl shadow-2xl border-emerald-500/20"
+                            >
+                                <div className="flex items-center gap-3">
+                                    <div className="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-charcoal-900">
+                                        <Zap className="w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <p className="text-xs text-emerald-400 font-bold uppercase tracking-wider">Ready to</p>
+                                        <p className="text-lg font-bold">Innovate</p>
+                                    </div>
+                                </div>
+                            </motion.div>
                         </div>
-                        {/* Decorative elements */}
-                        <div className="absolute -top-6 -right-6 w-32 h-32 bg-emerald-500/20 rounded-full blur-3xl" />
-                        <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-cyan-500/20 rounded-full blur-3xl" />
                     </motion.div>
                 </div>
             </div>
         </section>
     );
 };
+
+

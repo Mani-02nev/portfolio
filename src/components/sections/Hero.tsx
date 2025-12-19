@@ -1,14 +1,11 @@
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Code2, Database, Laptop, Sparkles } from 'lucide-react';
+import { ArrowRight, Code2, Database, Laptop, Sparkles, Brain } from 'lucide-react';
+import { portfolioData } from '../../data/portfolioData';
 
 export const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-            {/* Background Blobs */}
-            <div className="absolute top-1/4 -left-20 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] animate-pulse" />
-            <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] animate-pulse" />
-
             <div className="section-container relative z-10">
                 <div className="text-center">
                     <motion.div
@@ -18,7 +15,7 @@ export const Hero = () => {
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-8"
                     >
                         <Sparkles className="w-4 h-4" />
-                        <span>Available for new opportunities</span>
+                        <span>Ready for MNC Opportunities</span>
                     </motion.div>
 
                     <motion.h1
@@ -27,9 +24,9 @@ export const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.1 }}
                         className="text-5xl md:text-7xl font-bold font-display leading-[1.1] mb-6"
                     >
-                        Crafting <span className="text-gradient">Stunning</span>, <br />
-                        Responsive & High-End <br />
-                        User Interfaces
+                        Architecting <span className="text-gradient">Intelligent</span> <br />
+                        Systems & AI-Driven <br />
+                        User <span className="text-gradient">Experiences</span>
                     </motion.h1>
 
                     <motion.p
@@ -38,8 +35,8 @@ export const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-12"
                     >
-                        Frontend Architect & UI/UX Specialist. <br />
-                        Bringing designs to life with pixel-perfect precision and fluid animations.
+                        Computer Engineering Graduate specialized in <span className="text-white font-medium">AI & ML</span>.
+                        Building scalable solutions with modern tech stacks and data-driven insights.
                     </motion.p>
 
                     <motion.div
@@ -48,8 +45,8 @@ export const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="flex flex-col sm:flex-row items-center justify-center gap-4"
                     >
-                        <a href="#certifications" className="btn-primary group">
-                            Explore Credentials
+                        <a href="#experience" className="btn-primary group">
+                            Explore Experience
                             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </a>
                         <a href="#contact" className="btn-secondary">
@@ -68,24 +65,24 @@ export const Hero = () => {
                         className="mt-20 pt-10 border-t border-white/5"
                     >
                         <p className="text-sm font-medium text-gray-500 uppercase tracking-widest mb-8">
-                            Mastered In
+                            Core Expertise
                         </p>
-                        <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                        <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500 text-gray-400">
                             <div className="flex items-center gap-2">
-                                <Code2 className="w-6 h-6" />
-                                <span className="font-semibold text-lg">React & Next.js</span>
+                                <Brain className="w-6 h-6" />
+                                <span className="font-semibold text-lg">AI & Machine Learning</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <Sparkles className="w-6 h-6" />
-                                <span className="font-semibold text-lg">Modern UI/UX</span>
+                                <Code2 className="w-6 h-6" />
+                                <span className="font-semibold text-lg">Full-Stack Dev</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Database className="w-6 h-6" />
-                                <span className="font-semibold text-lg">State Management</span>
+                                <span className="font-semibold text-lg">Data Visualization</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Laptop className="w-6 h-6" />
-                                <span className="font-semibold text-lg">Responsive Art</span>
+                                <span className="font-semibold text-lg">Modern UI/UX</span>
                             </div>
                         </div>
                     </motion.div>
@@ -94,3 +91,4 @@ export const Hero = () => {
         </section>
     );
 };
+

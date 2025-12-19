@@ -1,24 +1,7 @@
 
 import { motion } from 'framer-motion';
 import { Briefcase, Calendar, MapPin, ExternalLink } from 'lucide-react';
-
-const experiences = [
-    {
-        role: 'AI & ML Engineering Intern',
-        company: 'Novi Tech Company',
-        location: 'Remote / Coimbatore',
-        period: 'Summer 2024',
-        description: 'Leading development of intelligent systems and interactive user interfaces for AI-driven analytics tools.',
-        achievements: [
-            'Architected a real-time data visualization dashboard using React for AI performance monitoring.',
-            'Implemented machine learning models for predictive analysis, integrating them into the frontend layer.',
-            'Collaborated on designing high-end UX for complex data storytelling and AI interactions.',
-            'Optimized system efficiency and frontend responsiveness for large-scale datasets.',
-        ],
-        tech: ['AI/ML', 'React', 'Python', 'Tailwind CSS', 'Chart.js'],
-        certificateUrl: '/certificates/KARUPPASAMY M.pdf'
-    }
-];
+import { portfolioData } from '../../data/portfolioData';
 
 export const Experience = () => {
     return (
@@ -34,7 +17,7 @@ export const Experience = () => {
                 </div>
 
                 <div className="max-w-4xl mx-auto">
-                    {experiences.map((exp, i) => (
+                    {portfolioData.experience.map((exp, i) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, scale: 0.95 }}
@@ -93,9 +76,14 @@ export const Experience = () => {
                                 </div>
 
                                 <div className="mt-8 pt-6 border-t border-white/5 flex flex-wrap justify-between items-center gap-4">
-                                    <button className="text-sm text-emerald-500 hover:text-emerald-400 flex items-center gap-1 font-medium group/btn">
-                                        Company Website <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-                                    </button>
+                                    <a
+                                        href={exp.companyUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="text-sm text-emerald-500 hover:text-emerald-400 flex items-center gap-1 font-medium group/btn"
+                                    >
+                                        Company Website <ExternalLink className="w-4 h-4" />
+                                    </a>
 
                                     {exp.certificateUrl && (
                                         <a
@@ -116,3 +104,4 @@ export const Experience = () => {
         </section>
     );
 };
+

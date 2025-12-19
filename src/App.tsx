@@ -6,10 +6,13 @@ import { Experience } from './components/sections/Experience';
 import { Leadership } from './components/sections/Leadership';
 import { Certifications } from './components/sections/Certifications';
 import { Contact } from './components/sections/Contact';
+import { ChatBot } from './components/ui/ChatBot';
+import { FloatingShapes } from './components/ui/FloatingShapes';
 
 function App() {
   return (
-    <div className="bg-charcoal-900 min-h-screen text-gray-100 selection:bg-emerald-500/30">
+    <div className="bg-charcoal-900 min-h-screen text-gray-100 selection:bg-emerald-500/30 relative">
+      <FloatingShapes />
       <Navbar />
       <main>
         <Hero />
@@ -34,8 +37,12 @@ function App() {
           </div>
         </div>
       </footer>
+
+      <ChatBot />
     </div>
   );
 }
 
 export default App;
+
+
