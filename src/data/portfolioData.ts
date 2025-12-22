@@ -37,12 +37,34 @@ export const portfolioData = {
             items: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'TypeScript']
         },
         {
-            category: 'Frameworks & Libraries',
-            items: ['React.js', 'Next.js', 'Tailwind CSS', 'Framer Motion']
+            category: 'Web Frameworks',
+            items: ['React.js', 'Next.js', 'Django', 'Tailwind CSS']
+        },
+        {
+            category: 'App Frameworks',
+            items: ['Flutter', 'React Native']
         },
         {
             category: 'UI & Design Tools',
             items: ['Responsive Design', 'UI/UX Principles', 'Figma', 'Component Architecture']
+        },
+        {
+            category: 'DevOps & Tools',
+            items: ['Linux', 'Unix', 'DevOps', 'Git', 'GitHub']
+        }
+    ],
+    projects: [
+        {
+            title: 'Resume Bilder AI',
+            description: 'Build ATS Friendly Resume',
+            link: 'https://resume-bilder-theta.vercel.app/',
+            tags: ['AI', 'Motion Graphics', 'Resume Builder']
+        },
+        {
+            title: 'Cobra AI Δ',
+            description: 'Advanced AI Chat Assistant',
+            link: 'https://mani-02nev.github.io/cobra.ai/',
+            tags: ['AI', 'ChatBot', 'Assistant']
         }
     ],
     stats: [

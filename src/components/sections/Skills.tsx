@@ -1,13 +1,15 @@
 
 import { motion } from 'framer-motion';
-import { Code, Layout, Server, Cpu } from 'lucide-react';
+import { Code, Layout, Server, Cpu, Terminal, Globe, Smartphone } from 'lucide-react';
 import { portfolioData } from '../../data/portfolioData';
 
 const iconMap: Record<string, any> = {
     'Programming Languages': Code,
-    'Core Technologies': Cpu, // Changed to Cpu for variety
-    'Frameworks & Libraries': Layout,
+    'Core Technologies': Cpu,
+    'Web Frameworks': Globe,
+    'App Frameworks': Smartphone,
     'UI & Design Tools': Server,
+    'DevOps & Tools': Terminal,
 };
 
 export const Skills = () => {

@@ -42,6 +42,19 @@ export const FloatingShapes = () => {
                 }}
                 className="absolute top-[40%] right-[30%] w-48 h-48 bg-purple-500/5 rounded-full blur-[60px]"
             />
+            <motion.div
+                animate={{
+                    x: [0, 50, 0],
+                    y: [0, -30, 0],
+                    rotate: [0, 180, 0],
+                }}
+                transition={{
+                    duration: 25,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                }}
+                className="absolute text-emerald-900/10 dark:text-emerald-500/5 top-[60%] left-[20%] w-72 h-72 bg-blue-500/5 rounded-full blur-[90px]"
+            />
         </div>
     );
 };
