@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Cpu } from 'lucide-react';
+import { Menu, X, Code2 } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 const navLinks = [
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Certifications', href: '#certifications' },
     { name: 'Contact', href: '#contact' },
@@ -41,10 +42,10 @@ export const Navbar = () => {
                         className="flex items-center gap-2 group"
                     >
                         <div className="p-2 rounded-lg bg-emerald-500/10 group-hover:bg-emerald-500/20 transition-colors">
-                            <Cpu className="w-6 h-6 text-emerald-500" />
+                            <Code2 className="w-6 h-6 text-emerald-500" />
                         </div>
                         <span className="text-xl font-bold tracking-tight font-display">
-                            Dev<span className="text-emerald-500">Portfolio</span>
+                            Karuppsaamy<span className="text-emerald-500"> M</span>
                         </span>
                     </motion.a>
 

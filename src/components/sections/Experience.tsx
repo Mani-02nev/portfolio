@@ -82,7 +82,7 @@ export const Experience = () => {
                                         rel="noreferrer"
                                         className="text-sm text-emerald-500 hover:text-emerald-400 flex items-center gap-1 font-medium group/btn"
                                     >
-                                        Company Website <ExternalLink className="w-4 h-4" />
+                                        {exp.role.includes('Student') ? 'College Website' : 'Company Website'} <ExternalLink className="w-4 h-4" />
                                     </a>
 
                                     {exp.certificateUrl && (

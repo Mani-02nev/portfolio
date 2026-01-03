@@ -32,11 +32,23 @@ export const About = () => {
                             <p>
                                 {portfolioData.personal.bio}
                             </p>
-                            <p>
-                                During my internship at <span className="text-white font-medium">{portfolioData.experience[0].company}</span>,
-                                I specialized in AI, ML, and Data Visualization, where I learned to transform raw data
-                                into actionable insights and deploy machine learning models that deliver real value.
-                            </p>
+
+                            <div className="pl-4 border-l-2 border-emerald-500/30">
+                                <h4 className="text-white font-bold mb-2 text-base">Academic Foundation</h4>
+                                <p className="text-sm">
+                                    Currently pursuing my degree at <span className="text-emerald-400 font-medium">{portfolioData.experience[0].company}</span> in {portfolioData.experience[0].location}.
+                                    {portfolioData.experience[0].description}
+                                </p>
+                            </div>
+
+                            <div className="pl-4 border-l-2 border-blue-500/30">
+                                <h4 className="text-white font-bold mb-2 text-base">Professional Experience</h4>
+                                <p className="text-sm">
+                                    During my tenure at <span className="text-blue-400 font-medium">{portfolioData.experience[1].company}</span> as an {portfolioData.experience[1].role},
+                                    I specialized in AI, ML, and Data Visualization. {portfolioData.experience[1].description}
+                                </p>
+                            </div>
+
                             <p>
                                 I thrive in collaborative environments where communication and leadership are as
                                 critical as the code itself. My approach is holistic: I don't just build features;

@@ -35,35 +35,50 @@ export const Projects = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.2 }}
-                            className="group block relative"
+                            whileHover={{ y: -10 }}
+                            className="group block relative h-full"
                         >
                             <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-blue-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                            <div className="relative h-full glass p-8 rounded-2xl border border-white/10 group-hover:border-emerald-500/30 transition-all duration-300 flex flex-col">
-                                <div className="flex justify-between items-start mb-6">
-                                    <div className="p-3 rounded-xl bg-emerald-500/10 group-hover:bg-emerald-500/20 transition-colors">
-                                        <Sparkles className="w-6 h-6 text-emerald-500" />
+                            <div className="relative h-full glass rounded-2xl border border-white/10 group-hover:border-emerald-500/30 transition-all duration-300 flex flex-col overflow-hidden">
+                                {/* Image Container */}
+                                <div className="relative h-48 overflow-hidden">
+                                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900 to-transparent z-10 opacity-60" />
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                    />
+                                    <div className="absolute top-4 right-4 z-20 p-2 rounded-xl bg-charcoal-900/50 backdrop-blur-md border border-white/10 group-hover:bg-emerald-500/20 transition-colors">
+                                        <ExternalLink className="w-5 h-5 text-white group-hover:text-emerald-500 transition-colors" />
                                     </div>
-                                    <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-emerald-500 transition-colors" />
                                 </div>
 
-                                <h4 className="text-xl font-bold font-display mb-3 group-hover:text-emerald-400 transition-colors">
-                                    {project.title}
-                                </h4>
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <div className="mb-4">
+                                        <div className="flex items-center gap-3 mb-3">
+                                            <div className="p-2 rounded-lg bg-emerald-500/10 group-hover:bg-emerald-500/20 transition-colors">
+                                                <Sparkles className="w-5 h-5 text-emerald-500" />
+                                            </div>
+                                            <h4 className="text-xl font-bold font-display group-hover:text-emerald-400 transition-colors">
+                                                {project.title}
+                                            </h4>
+                                        </div>
+                                        <p className="text-gray-400 text-sm leading-relaxed">
+                                            {project.description}
+                                        </p>
+                                    </div>
 
-                                <p className="text-gray-400 mb-6 flex-grow">
-                                    {project.description}
-                                </p>
-
-                                <div className="flex flex-wrap gap-2 mt-auto">
-                                    {project.tags.map((tag, j) => (
-                                        <span
-                                            key={j}
-                                            className="px-3 py-1 text-xs font-medium rounded-full bg-charcoal-800 text-gray-300 border border-white/5 group-hover:border-emerald-500/20 transition-colors"
-                                        >
-                                            {tag}
-                                        </span>
-                                    ))}
+                                    <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/5">
+                                        {project.tags.map((tag, j) => (
+                                            <span
+                                                key={j}
+                                                className="px-2.5 py-1 text-xs font-medium rounded-full bg-charcoal-800 text-gray-400 border border-white/5 group-hover:border-emerald-500/20 transition-colors"
+                                            >
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </motion.a>

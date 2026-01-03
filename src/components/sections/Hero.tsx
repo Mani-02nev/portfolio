@@ -1,7 +1,6 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Code2, Database, Laptop, Sparkles, Brain } from 'lucide-react';
-import { portfolioData } from '../../data/portfolioData';
 
 export const Hero = () => {
     return (
@@ -12,7 +11,8 @@ export const Hero = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
-                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-8"
+                        whileHover={{ scale: 1.05 }}
+                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-8 cursor-pointer"
                     >
                         <Sparkles className="w-4 h-4" />
                         <span>Ready for MNC Opportunities</span>
@@ -67,20 +67,20 @@ export const Hero = () => {
                         <p className="text-sm font-medium text-gray-500 uppercase tracking-widest mb-8">
                             Core Expertise
                         </p>
-                        <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500 text-gray-400">
-                            <div className="flex items-center gap-2">
+                        <div className="flex flex-wrap justify-center gap-8 md:gap-16 text-gray-400">
+                            <div className="flex items-center gap-2 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 hover:text-emerald-400 transition-all duration-300 hover:scale-110 cursor-default">
                                 <Brain className="w-6 h-6" />
                                 <span className="font-semibold text-lg">AI & Machine Learning</span>
                             </div>
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 hover:text-blue-400 transition-all duration-300 hover:scale-110 cursor-default">
                                 <Code2 className="w-6 h-6" />
                                 <span className="font-semibold text-lg">Full-Stack Dev</span>
                             </div>
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 hover:text-purple-400 transition-all duration-300 hover:scale-110 cursor-default">
                                 <Database className="w-6 h-6" />
                                 <span className="font-semibold text-lg">Data Visualization</span>
                             </div>
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 hover:text-orange-400 transition-all duration-300 hover:scale-110 cursor-default">
                                 <Laptop className="w-6 h-6" />
                                 <span className="font-semibold text-lg">Modern UI/UX</span>
                             </div>

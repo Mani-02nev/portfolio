@@ -9,13 +9,20 @@ import { Certifications } from './components/sections/Certifications';
 import { Contact } from './components/sections/Contact';
 import { ChatBot } from './components/ui/ChatBot';
 import { FloatingShapes } from './components/ui/FloatingShapes';
+import { StarField } from './components/ui/StarField';
 
 function App() {
   return (
-    <div className="bg-charcoal-900 min-h-screen text-gray-100 selection:bg-emerald-500/30 relative">
+    <div className="min-h-screen text-gray-100 selection:bg-emerald-500/30 relative overflow-hidden">
+      {/* Base Background Color */}
+      <div className="fixed inset-0 bg-charcoal-900 -z-50" />
+
+      {/* Background Effects */}
+      <StarField />
       <FloatingShapes />
+
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Skills />

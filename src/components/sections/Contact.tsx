@@ -48,8 +48,8 @@ export const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="text-sm text-gray-500">LinkedIn</p>
-                                        <a href="#" className="text-white font-medium hover:text-emerald-400 transition-colors">
-                                            linkedin.com/in/karuppasamy-m
+                                        <a href="https://www.linkedin.com/in/karuppasamy-m-b39995377/" className="text-white font-medium hover:text-emerald-400 transition-colors">
+                                            linkedin.com/in/karuppasamy
                                         </a>
                                     </div>
                                 </div>
