@@ -24,9 +24,8 @@ export const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.1 }}
                         className="text-5xl md:text-7xl font-bold font-display leading-[1.1] mb-6"
                     >
-                        Architecting <span className="text-gradient">Intelligent</span> <br />
-                        Systems & AI-Driven <br />
-                        User <span className="text-gradient">Experiences</span>
+                        “A learner-driven developer focused on building practical,  <br />
+                        user <span className="text-gradient">industry-ready applications.”</span>
                     </motion.h1>
 
                     <motion.p
@@ -35,8 +34,9 @@ export const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-12"
                     >
-                        Computer Engineering Graduate specialized in <span className="text-white font-medium">AI & ML</span>.
-                        Building scalable solutions with modern tech stacks and data-driven insights.
+                        {/* Computer Engineering Graduate specialized in <span className="text-white font-medium">AI & ML</span>.
+                        Building scalable solutions with modern tech stacks and data-driven insights. */}
+                        <br /><br />
                     </motion.p>
 
                     <motion.div

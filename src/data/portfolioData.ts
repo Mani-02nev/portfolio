@@ -6,7 +6,7 @@ export const portfolioData = {
         email: "karuppasamy.murugesan02@gmail.com",
         github: "https://github.com/Mani-02nev",
         linkedin: "https://www.linkedin.com/in/karuppasamy-m-b39995377/",
-        location: "Coimbatore, India",
+        location: "Trichy, India",
         bio: "As a Computer Engineering graduate, I’ve built a solid foundation in computer science principles. My journey is defined by a relentless drive to solve complex problems using intelligent systems and scalable architectures."
     },
     experience: [
@@ -77,7 +77,7 @@ export const portfolioData = {
             image: '/resume-builder.png'
         },
         {
-            title: 'Cobra AI Δ',
+            title: 'Think.io',
             description: 'Advanced AI Chat Assistant',
             link: 'https://mani-02nev.github.io/cobra.ai/',
             tags: ['AI', 'ChatBot', 'Assistant'],

@@ -8,6 +8,7 @@ import { Leadership } from './components/sections/Leadership';
 import { Certifications } from './components/sections/Certifications';
 import { Contact } from './components/sections/Contact';
 import { ChatBot } from './components/ui/ChatBot';
+import { PlanetModel } from './components/ui/PlanetModel';
 import { FloatingShapes } from './components/ui/FloatingShapes';
 import { StarField } from './components/ui/StarField';
 
@@ -19,6 +20,7 @@ function App() {
 
       {/* Background Effects */}
       <StarField />
+      <PlanetModel />
       <FloatingShapes />
 
       <Navbar />

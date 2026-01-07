@@ -22,6 +22,32 @@ export const About = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
+                            transition={{
+                                type: "spring",
+                                stiffness: 260,
+                                damping: 20,
+                                delay: 0.2
+                            }}
+                            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 mb-6 group hover:border-white/30 transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.05)] hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] cursor-default overflow-hidden"
+                        >
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                            </span>
+                            <motion.span
+                                initial={{ width: 0 }}
+                                whileInView={{ width: "auto" }}
+                                transition={{ duration: 1, delay: 0.5 }}
+                                className="text-sm font-medium text-white tracking-widest uppercase whitespace-nowrap overflow-hidden border-r-2 border-white/30 pr-1"
+                            >
+                                Hi! I'm {portfolioData.personal.name.split(' ')[0]}
+                            </motion.span>
+                        </motion.div>
+
                         <h2 className="text-sm font-bold text-emerald-500 uppercase tracking-widest mb-4">
                             About Me
                         </h2>
