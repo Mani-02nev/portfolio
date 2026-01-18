@@ -36,10 +36,21 @@ export const ChatBot: React.FC = () => {
         }
     }, [messages, isOpen]);
 
-    const speak = (text: string) => {
+    const stopSpeaking = () => {
+        window.speechSynthesis.cancel();
+        setSpeakingMsgId(null);
+    };
+
+    const speak = (text: string, id: string) => {
         if (!window.speechSynthesis) return;
 
-        // Cancel any ongoing speech
+        // If currently speaking this message, stop it
+        if (speakingMsgId === id) {
+            stopSpeaking();
+            return;
+        }
+
+        // Cancel any other ongoing speech
         window.speechSynthesis.cancel();
 
         const utterance = new SpeechSynthesisUtterance(text);
@@ -47,11 +58,15 @@ export const ChatBot: React.FC = () => {
         utterance.pitch = 1;
         utterance.volume = 1;
 
+        utterance.onend = () => setSpeakingMsgId(null);
+        utterance.onerror = () => setSpeakingMsgId(null);
+
         // Try to set a good voice
         const voices = window.speechSynthesis.getVoices();
         const preferredVoice = voices.find(voice => voice.name.includes('Google') || voice.name.includes('Samantha'));
         if (preferredVoice) utterance.voice = preferredVoice;
 
+        setSpeakingMsgId(id);
         window.speechSynthesis.speak(utterance);
     };
 
