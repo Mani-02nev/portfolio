@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageSquare, X, Send, Bot, User, MinusCircle } from 'lucide-react';
+import { MessageSquare, X, Send, Bot, User, MinusCircle, Volume2, VolumeX, StopCircle } from 'lucide-react';
 import { portfolioData } from '../../data/portfolioData';
 
 interface Message {
@@ -22,6 +22,8 @@ export const ChatBot: React.FC = () => {
         },
     ]);
     const [input, setInput] = useState('');
+    const [isSoundOn, setIsSoundOn] = useState(false);
+    const [speakingMsgId, setSpeakingMsgId] = useState<string | null>(null);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     const scrollToBottom = () => {
@@ -33,6 +35,25 @@ export const ChatBot: React.FC = () => {
             scrollToBottom();
         }
     }, [messages, isOpen]);
+
+    const speak = (text: string) => {
+        if (!window.speechSynthesis) return;
+
+        // Cancel any ongoing speech
+        window.speechSynthesis.cancel();
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 1;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        // Try to set a good voice
+        const voices = window.speechSynthesis.getVoices();
+        const preferredVoice = voices.find(voice => voice.name.includes('Google') || voice.name.includes('Samantha'));
+        if (preferredVoice) utterance.voice = preferredVoice;
+
+        window.speechSynthesis.speak(utterance);
+    };
 
     const handleSend = () => {
         if (!input.trim()) return;
@@ -57,6 +78,9 @@ export const ChatBot: React.FC = () => {
                 timestamp: new Date(),
             };
             setMessages(prev => [...prev, botMessage]);
+            if (isSoundOn) {
+                speak(botResponse, botMessage.id);
+            }
         }, 1000);
     };
 
@@ -112,12 +136,27 @@ export const ChatBot: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                            <button
-                                onClick={() => setIsOpen(false)}
-                                className="text-white/80 hover:text-white transition-colors"
-                            >
-                                <X className="w-5 h-5" />
-                            </button>
+                            <div className="flex items-center gap-1">
+                                <button
+                                    onClick={() => {
+                                        if (isSoundOn) stopSpeaking();
+                                        setIsSoundOn(!isSoundOn);
+                                    }}
+                                    className="p-2 text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/10"
+                                    title={isSoundOn ? "Mute" : "Unmute"}
+                                >
+                                    {isSoundOn ? <Volume2 className="w-5 h-5" /> : <VolumeX className="w-5 h-5" />}
+                                </button>
+                                <button
+                                    onClick={() => {
+                                        stopSpeaking();
+                                        setIsOpen(false);
+                                    }}
+                                    className="p-2 text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/10"
+                                >
+                                    <X className="w-5 h-5" />
+                                </button>
+                            </div>
                         </div>
 
                         {/* Messages */}
@@ -132,11 +171,21 @@ export const ChatBot: React.FC = () => {
                                             }`}>
                                             {msg.sender === 'user' ? <User className="w-4 h-4 text-emerald-500" /> : <Bot className="w-4 h-4 text-emerald-500" />}
                                         </div>
-                                        <div className={`p-3 rounded-2xl text-sm ${msg.sender === 'user'
-                                                ? 'bg-emerald-500 text-white rounded-tr-none'
-                                                : 'bg-charcoal-800 text-gray-200 border border-white/5 rounded-tl-none'
+                                        <div className={`p-3 rounded-2xl text-sm group relative ${msg.sender === 'user'
+                                            ? 'bg-emerald-500 text-white rounded-tr-none'
+                                            : 'bg-charcoal-800 text-gray-200 border border-white/5 rounded-tl-none'
                                             }`}>
                                             {msg.text}
+                                            {msg.sender === 'bot' && (
+                                                <button
+                                                    onClick={() => speak(msg.text, msg.id)}
+                                                    className={`absolute -right-8 top-1/2 -translate-y-1/2 transition-opacity p-1.5 hover:bg-white/10 rounded-full text-gray-400 hover:text-white ${speakingMsgId === msg.id ? 'opacity-100 text-emerald-500' : 'opacity-0 group-hover:opacity-100'
+                                                        }`}
+                                                    title={speakingMsgId === msg.id ? "Stop" : "Read aloud"}
+                                                >
+                                                    {speakingMsgId === msg.id ? <StopCircle className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
+                                                </button>
+                                            )}
                                         </div>
                                     </div>
                                 </div>

@@ -44,8 +44,8 @@ export const Navbar = () => {
                         <div className="p-2 rounded-lg bg-emerald-500/10 group-hover:bg-emerald-500/20 transition-colors">
                             <Code2 className="w-6 h-6 text-emerald-500" />
                         </div>
-                        <span className="text-xl font-bold tracking-tight font-display">
-                            Karuppsaamy<span className="text-emerald-500"> M</span>
+                        <span className="text-xl font-bold tracking-tight font-display text-white">
+                            Karuppasamy<span className="text-emerald-500"> M</span>
                         </span>
                     </motion.a>
 
@@ -101,7 +101,7 @@ export const Navbar = () => {
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="block text-lg font-medium text-gray-300 hover:text-emerald-400"
+                                    className="block text-lg font-medium text-white hover:text-emerald-400"
                                 >
                                     {link.name}
                                 </a>

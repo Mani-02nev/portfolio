@@ -2,10 +2,12 @@
 import { motion } from 'framer-motion';
 import { Briefcase, Calendar, MapPin, ExternalLink } from 'lucide-react';
 import { portfolioData } from '../../data/portfolioData';
+import { AnimatedBackground } from '../ui/AnimatedBackground';
 
 export const Experience = () => {
     return (
-        <section id="experience" className="py-24 bg-charcoal-800/30">
+        <section id="experience" className="py-24 bg-charcoal-800/30 relative overflow-hidden">
+            <AnimatedBackground />
             <div className="section-container">
                 <div className="text-center mb-16">
                     <h2 className="text-sm font-bold text-emerald-500 uppercase tracking-widest mb-4">

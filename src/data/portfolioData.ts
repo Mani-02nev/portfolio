@@ -40,6 +40,22 @@ export const portfolioData = {
             ],
             tech: ['AI/ML', 'React', 'Python', 'Tailwind CSS', 'Chart.js'],
             certificateUrl: '/certificates/KARUPPASAMY M (2).pdf'
+        },
+        {
+            role: 'Data Analytics Intern',
+            company: 'Novi Tech Company',
+            companyUrl: 'https://novitechrd.com/',
+            location: 'Remote',
+            period: 'Dec 10 - Jan 10',
+            description: 'One-month intensive internship focused on data exploration, statistical analysis, and dashboard development.',
+            achievements: [
+                'Performed comprehensive data cleaning and exploratory data analysis on diverse datasets.',
+                'Designed and implemented interactive data dashboards for business intelligence.',
+                'Applied statistical techniques to identify trends and patterns in complex numerical data.',
+                'Generated detailed reports and presentations for technical and non-technical stakeholders.'
+            ],
+            tech: ['Data Analytics', 'Excel', 'Tableau', 'Statistics', 'SQL'],
+            certificateUrl: '/certificates/KARUPPASAMY M (3).pdf'
         }
     ],
     skills: [

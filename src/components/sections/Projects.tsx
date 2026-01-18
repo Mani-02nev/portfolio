@@ -1,15 +1,13 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Sparkles } from 'lucide-react';
 import { portfolioData } from '../../data/portfolioData';
+import { AnimatedBackground } from '../ui/AnimatedBackground';
 
 export const Projects = () => {
     return (
         <section id="projects" className="py-24 relative overflow-hidden">
-            {/* Background Decor */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
-                <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-[100px]" />
-                <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[100px]" />
-            </div>
+            {/* Animated Background */}
+            <AnimatedBackground />
 
             <div className="section-container">
                 <div className="text-center mb-16">

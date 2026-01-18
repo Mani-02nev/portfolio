@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,21 +6,23 @@
 
 @layer base {
   body {
-    @apply bg-charcoal-900 text-gray-100 font-sans selection:bg-emerald-500/30;
+    @apply bg-primary text-gray-100 font-sans selection:bg-mint/30;
+    background: #0d0221;
+    overflow-x: hidden;
   }
 }
 
 @layer components {
   .glass {
-    @apply bg-charcoal-800/40 backdrop-blur-md border border-white/10;
+    @apply bg-storm/40 backdrop-blur-md border border-white/10;
   }
-  
+
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-fuchsia via-lavender to-mint;
   }
 
   .nav-link {
-    @apply text-gray-400 hover:text-emerald-400 transition-colors duration-300 font-medium;
+    @apply text-white hover:text-fuchsia transition-colors duration-300 font-medium;
   }
 
   .section-container {
@@ -32,15 +34,31 @@
   }
 
   .btn-primary {
-    @apply btn bg-emerald-500 text-charcoal-900 hover:bg-emerald-400 shadow-lg shadow-emerald-500/20 active:scale-95;
+    @apply btn bg-gradient-to-r from-lavender to-fuchsia text-white hover:shadow-lg hover:shadow-lavender/50 active:scale-95;
   }
 
   .btn-secondary {
-    @apply btn bg-charcoal-800 text-white border border-white/10 hover:bg-charcoal-700 active:scale-95;
+    @apply btn bg-storm text-white border border-white/10 hover:bg-indigo hover:border-lavender/50 active:scale-95;
   }
 
   .btn-outline {
-    @apply btn bg-transparent border border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 active:scale-95;
+    @apply btn bg-transparent border-2 border-lavender/50 text-lavender hover:bg-lavender/10 hover:border-lavender active:scale-95;
+  }
+
+  .c-space {
+    @apply sm:px-10 px-5 lg:px-16;
+  }
+
+  .card-cosmic {
+    @apply bg-gradient-to-br from-storm to-indigo border border-white/10 rounded-2xl p-6 hover:border-lavender/30 transition-all duration-300 hover:shadow-lg hover:shadow-lavender/20;
+  }
+
+  .heading-cosmic {
+    @apply text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-fuchsia to-lavender bg-clip-text text-transparent;
+  }
+
+  .subheading-cosmic {
+    @apply text-xl md:text-2xl text-gray-300 font-medium;
   }
 }
 
@@ -54,9 +72,9 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-charcoal-900;
+  @apply bg-primary;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-charcoal-700 rounded-full hover:bg-emerald-600 transition-colors;
+  @apply bg-storm rounded-full hover:bg-mint transition-colors;
 }

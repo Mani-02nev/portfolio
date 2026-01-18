@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { GraduationCap, Award, Zap, Users } from 'lucide-react';
 import profilePic from '../../assets/profil.jpeg';
 import { portfolioData } from '../../data/portfolioData';
+import { AnimatedBackground } from '../ui/AnimatedBackground';
 
 const iconMap: Record<string, any> = {
     'Technical Depth': GraduationCap,
@@ -13,7 +14,8 @@ const iconMap: Record<string, any> = {
 
 export const About = () => {
     return (
-        <section id="about" className="py-24 bg-charcoal-800/30">
+        <section id="about" className="py-24 bg-charcoal-800/30 relative overflow-hidden">
+            <AnimatedBackground />
             <div className="section-container">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <motion.div
