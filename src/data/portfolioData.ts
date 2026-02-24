@@ -86,18 +86,38 @@ export const portfolioData = {
     ],
     projects: [
         {
-            title: 'Resume Bilder AI',
-            description: 'Build ATS Friendly Resume',
-            link: 'https://resume-bilder-theta.vercel.app/',
-            tags: ['AI', 'Motion Graphics', 'Resume Builder'],
-            image: '/resume-builder.png'
+            title: 'KS AI Resume Builder',
+            description: 'AI-powered SaaS platform that generates ATS-optimized resumes instantly using structured prompt engineering.',
+            link: 'https://kscv.vercel.app/',
+            tags: ['AI SaaS', 'Full Stack', 'React'],
+            image: '/ks_resume_builder.png'
         },
         {
-            title: 'Think.io',
-            description: 'Advanced AI Chat Assistant',
-            link: 'https://mani-02nev.github.io/cobra.ai/',
-            tags: ['AI', 'ChatBot', 'Assistant'],
-            image: '/cobra-ai.png'
+            title: 'Agent K',
+            description: 'Browser-based autonomous AI web agent built with scalable SaaS architecture, supporting multi-model orchestration.',
+            link: 'https://agent02.vercel.app/',
+            tags: ['AI Platform', 'Full Stack', 'React', 'Python'],
+            image: '/agent_k_dashboard.png'
+        },
+        {
+            title: 'UNIVAULT',
+            description: 'Lightweight PHP-based e-commerce system using CSV flat-file storage instead of SQL databases for portability.',
+            link: 'https://univalut.onrender.com/',
+            tags: ['E-Commerce', 'PHP', 'Full Stack'],
+            image: '/univault_ecommerce.png'
+        },
+        {
+            title: 'AC Duct ERP System',
+            description: 'Full-stack unified digital system for AC duct fabrication companies in Dubai, replacing manual workflows from inquiry to reporting.',
+            link: '#',
+            tags: ['React', 'Node.js', 'PostgreSQL', 'React Native', 'Full Stack'],
+            image: '/assets/ac-project-img/image-1.png',
+            gallery: [
+                '/assets/ac-project-img/image-1.png',
+                '/assets/ac-project-img/image-2.png',
+                '/assets/ac-project-img/image-3.png',
+                '/assets/ac-project-img/image-4.png'
+            ]
         }
     ],
     certifications: [
