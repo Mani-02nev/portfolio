@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion';
 import { GraduationCap, Award, Zap, Users } from 'lucide-react';
-import profilePic from '../../assets/profil.jpeg';
+import profilePic from '../../assets/profile-01.png';
 import { portfolioData } from '../../data/portfolioData';
 import { AnimatedBackground } from '../ui/AnimatedBackground';
 
