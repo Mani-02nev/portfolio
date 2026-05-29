@@ -16,14 +16,37 @@ export const portfolioData = {
             companyUrl: 'https://www.sittrichy.in/',
             location: 'Tiruchirappalli',
             period: '2025 - 2027',
+            type: 'education',
+            typeLabel: 'Education',
+            typeColor: 'purple',
             description: 'Pursuing a comprehensive curriculum in Computer Engineering, with a focus on modern software systems and emerging technologies.',
             achievements: [
-                'Major in Computer Engineering',
-                'Engaged in advanced technical studies and practical lab work',
-                'Building strong fundamentals in algorithms and system architecture'
+                'Major in Computer Engineering with specialization in AI & Systems.',
+                'Engaged in advanced technical studies and practical lab work.',
+                'Building strong fundamentals in algorithms and system architecture.',
+                'Active participant in hackathons, coding competitions, and tech clubs.'
             ],
-            tech: ['Computer Science', 'Engineering', 'Academic'],
+            tech: ['Computer Science', 'Algorithms', 'Systems Design', 'Engineering'],
             certificateUrl: ''
+        },
+        {
+            role: 'Data Analytics Intern',
+            company: 'Novi Tech Company',
+            companyUrl: 'https://novitechrd.com/',
+            location: 'Remote',
+            period: 'Dec 2023 – Jan 2024',
+            type: 'internship',
+            typeLabel: 'Internship',
+            typeColor: 'orange',
+            description: 'One-month intensive internship focused on data exploration, statistical analysis, and dashboard development.',
+            achievements: [
+                'Performed comprehensive data cleaning and exploratory data analysis on diverse datasets.',
+                'Designed and implemented interactive data dashboards for business intelligence.',
+                'Applied statistical techniques to identify trends and patterns in complex numerical data.',
+                'Generated detailed reports and presentations for technical and non-technical stakeholders.'
+            ],
+            tech: ['Data Analytics', 'Excel', 'Tableau', 'Statistics', 'SQL'],
+            certificateUrl: '/certificates/KARUPPASAMY M (3).pdf'
         },
         {
             role: 'AI & ML Engineering Intern',
@@ -31,7 +54,10 @@ export const portfolioData = {
             companyUrl: 'https://novitechrd.com/',
             location: 'Remote / Coimbatore',
             period: 'Summer 2024',
-            description: 'Leading development of intelligent systems and interactive user interfaces for AI-driven analytics tools.',
+            type: 'internship',
+            typeLabel: 'Internship',
+            typeColor: 'emerald',
+            description: 'Led development of intelligent systems and interactive user interfaces for AI-driven analytics tools at Novi Tech.',
             achievements: [
                 'Architected a real-time data visualization dashboard using React for AI performance monitoring.',
                 'Implemented machine learning models for predictive analysis, integrating them into the frontend layer.',
@@ -42,20 +68,42 @@ export const portfolioData = {
             certificateUrl: '/certificates/KARUPPASAMY M (2).pdf'
         },
         {
-            role: 'Data Analytics Intern',
-            company: 'Novi Tech Company',
-            companyUrl: 'https://novitechrd.com/',
-            location: 'Remote',
-            period: 'Dec 10 - Jan 10',
-            description: 'One-month intensive internship focused on data exploration, statistical analysis, and dashboard development.',
+            role: 'AI & ML Engineering Intern',
+            company: 'VDart Inc.',
+            companyUrl: 'https://www.vdart.com/',
+            location: 'Onsite / Tiruchirappalli',
+            period: '2025',
+            type: 'internship',
+            typeLabel: 'Internship',
+            typeColor: 'blue',
+            description: 'Intensive AI & ML internship at VDart, a global staffing and technology solutions company, working on real-world machine learning and AI-driven automation projects.',
             achievements: [
-                'Performed comprehensive data cleaning and exploratory data analysis on diverse datasets.',
-                'Designed and implemented interactive data dashboards for business intelligence.',
-                'Applied statistical techniques to identify trends and patterns in complex numerical data.',
-                'Generated detailed reports and presentations for technical and non-technical stakeholders.'
+                'Developed and deployed machine learning models for enterprise automation workflows.',
+                'Built AI pipelines integrating NLP and computer vision capabilities.',
+                'Collaborated with senior engineers on data preprocessing and model optimization.',
+                'Contributed to production-grade AI microservices and REST API integrations.'
             ],
-            tech: ['Data Analytics', 'Excel', 'Tableau', 'Statistics', 'SQL'],
-            certificateUrl: '/certificates/KARUPPASAMY M (3).pdf'
+            tech: ['Python', 'Machine Learning', 'NLP', 'Computer Vision', 'FastAPI', 'TensorFlow'],
+            certificateUrl: ''
+        },
+        {
+            role: 'Google Campus Ambassador',
+            company: 'Google',
+            companyUrl: 'https://developers.google.com/',
+            location: 'India',
+            period: '2026 - Present',
+            type: 'ambassador',
+            typeLabel: 'Ambassador',
+            typeColor: 'google',
+            description: 'Selected as a Google Campus Ambassador for 2026, representing Google Developer ecosystem on campus, driving tech awareness and community engagement across the institution.',
+            achievements: [
+                'Represent Google products, programs, and developer tools at the campus level.',
+                'Organize and host developer events, workshops, and study jams for students.',
+                'Drive awareness of Google Cloud, Android, and AI/ML platforms among peers.',
+                'Bridge students with Google developer resources and career opportunities.'
+            ],
+            tech: ['Google Cloud', 'Android', 'AI/ML', 'Community Leadership', 'Developer Relations'],
+            certificateUrl: ''
         }
     ],
     skills: [
@@ -116,7 +164,6 @@ export const portfolioData = {
                 '/assets/ac-project-img/image-1.png',
                 '/assets/ac-project-img/image-2.png',
                 '/assets/ac-project-img/image-3.png',
-                '/assets/ac-project-img/image-4.png'
             ]
         }
     ],
