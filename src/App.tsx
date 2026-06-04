@@ -2,7 +2,7 @@ import { Navbar } from './components/layout/Navbar';
 import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
 import { Skills } from './components/sections/Skills';
-import { Projects } from './components/sections/Projects';
+import { Products } from './components/sections/Products';
 import { Experience } from './components/sections/Experience';
 import { Leadership } from './components/sections/Leadership';
 import { Certifications } from './components/sections/Certifications';
@@ -22,7 +22,7 @@ function App() {
         <Hero />
         <About />
         <Skills />
-        <Projects />
+        <Products />
         <Experience />
         <Leadership />
         <Certifications />
@@ -42,6 +42,8 @@ function App() {
           </div>
         </div>
       </footer>
+
+      <div className="absolute inset-x-0 bottom-0 h-px" style={{ background: 'linear-gradient(90deg, #4285F4 0%, #34A853 25%, #FBBC05 55%, #EA4335 100%)' }} />
 
       <ChatBot />
     </div>
