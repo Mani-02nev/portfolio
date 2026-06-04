@@ -33,6 +33,16 @@ const softSkills = [
         description: 'Upholding high standards of ethics, reliability, and engineering discipline in every project.',
         icon: ShieldCheck,
     },
+    {
+        title: 'Adaptability',
+        description: 'Thrives in dynamic environments, quickly adjusting to new technologies and shifting project requirements.',
+        icon: ShieldCheck,
+    },
+    {
+        title: 'Empathy',
+        description: 'Understanding user needs and team perspectives to create inclusive solutions and foster a supportive work environment.',
+        icon: HeartHandshake,
+    }
 ];
 
 export const Leadership = () => {

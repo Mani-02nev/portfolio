@@ -113,7 +113,9 @@ export const Navbar = () => {
                             >
                                 Hire Me
                             </a>
+
                         </div>
+
                     </motion.div>
                 )}
             </AnimatePresence>

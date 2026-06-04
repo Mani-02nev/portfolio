@@ -28,24 +28,23 @@ const PerformanceWidget: React.FC<PerformanceWidgetProps> = ({ initialTimeframe 
 
     return (
         <div className="w-full rounded-2xl border border-white/10 bg-white/[0.02] p-4 space-y-4 shadow-xl backdrop-blur-md">
-            
+
             {/* Header timeframe switcher */}
             <div className="flex justify-between items-center select-none">
                 <span className="font-bold uppercase tracking-wider text-[8px] text-[#C084FC] flex items-center gap-1">
                     <TrendingUp className="w-3 h-3 text-[#EC4899]" />
                     Activity Engine
                 </span>
-                
+
                 <div className="flex gap-1 p-0.5 rounded-lg bg-white/[0.03] border border-white/[0.06]">
                     {(['monthly', 'weekly', 'daily'] as const).map((t) => (
                         <button
                             key={t}
                             onClick={() => setTimeframe(t)}
-                            className={`text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md transition-all ${
-                                timeframe === t
+                            className={`text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md transition-all ${timeframe === t
                                     ? 'bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] text-white shadow-sm'
                                     : 'text-white/40 hover:text-white/70'
-                            }`}
+                                }`}
                         >
                             {t}
                         </button>
@@ -67,7 +66,7 @@ const PerformanceWidget: React.FC<PerformanceWidgetProps> = ({ initialTimeframe 
                                 <line x1="0" y1="25" x2="100" y2="25" stroke="rgba(255,255,255,0.03)" strokeWidth="0.5" />
                                 <line x1="0" y1="50" x2="100" y2="50" stroke="rgba(255,255,255,0.03)" strokeWidth="0.5" />
                                 <line x1="0" y1="75" x2="100" y2="75" stroke="rgba(255,255,255,0.03)" strokeWidth="0.5" />
-                                
+
                                 <path
                                     d="M 0 95 Q 20 80, 40 55 T 80 25 T 100 5 L 100 100 L 0 100 Z"
                                     fill="url(#area-glow)"
@@ -129,13 +128,13 @@ const PerformanceWidget: React.FC<PerformanceWidgetProps> = ({ initialTimeframe 
                             <span className="font-medium text-white/60">Weekly Git Activity (Last 4 Wks)</span>
                             <span className="text-[#EC4899] font-bold">Avg: 60 commits/wk</span>
                         </div>
-                        
+
                         <div className="h-28 w-full bg-[#070015]/60 rounded-lg relative overflow-hidden flex items-end px-1 border border-white/[0.04]">
                             <svg className="absolute inset-0 w-full h-full p-2 overflow-visible" viewBox="0 0 100 100" preserveAspectRatio="none">
                                 <line x1="0" y1="25" x2="100" y2="25" stroke="rgba(255,255,255,0.03)" strokeWidth="0.5" />
                                 <line x1="0" y1="50" x2="100" y2="50" stroke="rgba(255,255,255,0.03)" strokeWidth="0.5" />
                                 <line x1="0" y1="75" x2="100" y2="75" stroke="rgba(255,255,255,0.03)" strokeWidth="0.5" />
-                                
+
                                 <path
                                     d="M 0 85 Q 25 50, 50 65 T 100 15 L 100 100 L 0 100 Z"
                                     fill="url(#weekly-area)"
@@ -265,7 +264,7 @@ export const ChatBot: React.FC = () => {
     const [messages, setMessages] = useState<Message[]>([
         {
             id: '1',
-            text: "Hi! I'm the KS Analytics Engine. How can I help you explore Karuppasamy's career metrics today?",
+            text: "Hi! I'm the Mr K  Analytics Engine. How can I help you explore Karuppasamy's career metrics today?",
             sender: 'bot',
             timestamp: new Date(),
         },
@@ -383,7 +382,7 @@ export const ChatBot: React.FC = () => {
         // 1. GREETINGS & HELLO
         if (q.startsWith('hi') || q.startsWith('hello') || q.startsWith('hey') || q.includes('greetings') || q.includes('wassup') || q.includes('yo')) {
             return {
-                text: "Hello! Welcome to the KS Analytics Engine. I'm ready to generate performance metrics, check technology stack configurations, or outline academic qualifications. How shall we begin?",
+                text: "Hello! Welcome to the Mr K Analytics Engine. I'm ready to generate performance metrics, check technology stack configurations, or outline academic qualifications. How shall we begin?",
                 isVisual: false
             };
         }
@@ -586,13 +585,13 @@ If you require a formal PDF copy of his resume for your corporate database, plea
         // 15. BIOGRAPHY / ABOUT / BOSS
         if (q.includes('who') || q.includes('about') || q.includes('name') || q.includes('karuppasamy') || q.includes('boss') || q.includes('goal') || q.includes('future') || q.includes('vision')) {
             return {
-                text: `I'm the KS Analytics Engine, an AI assistant for ${portfolioData.personal.name}. ${portfolioData.personal.bio}`,
+                text: `I'm the Mr K Analytics Engine, an AI assistant for ${portfolioData.personal.name}. ${portfolioData.personal.bio}`,
                 isVisual: false
             };
         }
 
         return {
-            text: "I am the KS Analytics Engine. I can show Karuppasamy's metrics, skills matrix, product lists, or academic qualifications. Try typing 'performance', 'skills matrix', or 'academic credentials'!",
+            text: "I am the Mr K Analytics Engine. I can show Karuppasamy's metrics, skills matrix, product lists, or academic qualifications. Try typing 'performance', 'skills matrix', or 'academic credentials'!",
             isVisual: false
         };
     };
@@ -614,7 +613,7 @@ If you require a formal PDF copy of his resume for your corporate database, plea
                                     <Bot className="w-5 h-5 text-white animate-pulse" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="text-white font-bold text-sm font-display tracking-tight">KS Analytics Engine</h4>
+                                    <h4 className="text-white font-bold text-sm font-display tracking-tight">Mr K Analytics Engine</h4>
                                     <div className="flex items-center gap-1.5">
                                         <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                                         <span className="text-white/80 text-[9px] uppercase font-bold tracking-widest">Analytics Mode</span>
@@ -628,7 +627,7 @@ If you require a formal PDF copy of his resume for your corporate database, plea
                                         setMessages([
                                             {
                                                 id: '1',
-                                                text: "Hi! I'm the KS Analytics Engine. How can I help you explore Karuppasamy's career metrics today?",
+                                                text: "Hi! I'm the Mr K Analytics Engine. How can I help you explore Karuppasamy's career metrics today?",
                                                 sender: 'bot',
                                                 timestamp: new Date(),
                                             }
@@ -670,27 +669,24 @@ If you require a formal PDF copy of his resume for your corporate database, plea
                                         className={`flex flex-col ${msg.sender === 'user' ? 'items-end' : 'items-start'}`}
                                     >
                                         <div className={`flex gap-2.5 max-w-[85%] ${msg.sender === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
-                                            <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${
-                                                msg.sender === 'user' ? 'bg-white/[0.04] border border-white/[0.08]' : 'bg-[#8B5CF6]/20 border border-[#8B5CF6]/30'
-                                            }`}>
+                                            <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${msg.sender === 'user' ? 'bg-white/[0.04] border border-white/[0.08]' : 'bg-[#8B5CF6]/20 border border-[#8B5CF6]/30'
+                                                }`}>
                                                 {msg.sender === 'user' ? <User className="w-4 h-4 text-[#C084FC]" /> : <Bot className="w-4 h-4 text-[#8B5CF6]" />}
                                             </div>
-                                            
+
                                             <div className="space-y-1.5 max-w-full">
-                                                <div className={`p-3.5 rounded-2xl text-xs md:text-sm group relative ${
-                                                    msg.sender === 'user'
+                                                <div className={`p-3.5 rounded-2xl text-xs md:text-sm group relative ${msg.sender === 'user'
                                                         ? 'bg-gradient-to-br from-[#8B5CF6] to-[#EC4899] text-white rounded-tr-none shadow-[0_4px_16px_rgba(139,92,246,0.15)] text-left'
                                                         : 'bg-white/[0.02] text-gray-200 border border-white/[0.05] rounded-tl-none text-left'
                                                     }`}
                                                 >
                                                     <p className="leading-relaxed whitespace-pre-line">{msg.text}</p>
-                                                    
+
                                                     {msg.sender === 'bot' && (
                                                         <button
                                                             onClick={() => speak(msg.text, msg.id)}
-                                                            className={`absolute -right-8 top-1/2 -translate-y-1/2 transition-opacity p-1.5 hover:bg-white/10 rounded-full text-gray-400 hover:text-white ${
-                                                                speakingMsgId === msg.id ? 'opacity-100 text-[#EC4899]' : 'opacity-0 group-hover:opacity-100'
-                                                            }`}
+                                                            className={`absolute -right-8 top-1/2 -translate-y-1/2 transition-opacity p-1.5 hover:bg-white/10 rounded-full text-gray-400 hover:text-white ${speakingMsgId === msg.id ? 'opacity-100 text-[#EC4899]' : 'opacity-0 group-hover:opacity-100'
+                                                                }`}
                                                             title={speakingMsgId === msg.id ? "Stop" : "Read aloud"}
                                                         >
                                                             {speakingMsgId === msg.id ? <StopCircle className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
@@ -719,7 +715,7 @@ If you require a formal PDF copy of his resume for your corporate database, plea
                                                                         <span style={{ color: skill.color }}>{skill.val}%</span>
                                                                     </div>
                                                                     <div className="h-1.5 w-full bg-white/[0.04] rounded-full overflow-hidden">
-                                                                        <motion.div 
+                                                                        <motion.div
                                                                             initial={{ width: 0 }}
                                                                             animate={{ width: `${skill.val}%` }}
                                                                             transition={{ duration: 0.8, delay: i * 0.1 }}
@@ -814,11 +810,10 @@ If you require a formal PDF copy of his resume for your corporate database, plea
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setIsOpen(!isOpen)}
-                className={`w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 ${
-                    isOpen 
-                        ? 'bg-[#0d0720] text-[#8B5CF6] border border-white/10' 
+                className={`w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 ${isOpen
+                        ? 'bg-[#0d0720] text-[#8B5CF6] border border-white/10'
                         : 'bg-gradient-to-r from-[#8B5CF6] via-[#EC4899] to-[#C084FC] text-white shadow-[0_8px_30px_rgba(139,92,246,0.3)]'
-                }`}
+                    }`}
             >
                 {isOpen ? <MinusCircle className="w-6 h-6" /> : <MessageSquare className="w-6 h-6" />}
             </motion.button>

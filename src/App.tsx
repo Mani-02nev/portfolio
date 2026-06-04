@@ -43,7 +43,7 @@ function App() {
         </div>
       </footer>
 
-      <div className="absolute inset-x-0 bottom-0 h-px" style={{ background: 'linear-gradient(90deg, #4285F4 0%, #34A853 25%, #FBBC05 55%, #EA4335 100%)' }} />
+      <div className="absolute inset-x-0 bottom-0 h-px" style={{ background: 'linear-gradient(90deg, #4285F4 0%, #34A853 25%, #FBBC05 55%, #EA4335 100%)', width: '100%', height: '5px' }} />
 
       <ChatBot />
     </div>
