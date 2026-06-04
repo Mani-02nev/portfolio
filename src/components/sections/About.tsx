@@ -8,14 +8,14 @@ const iconMap: Record<string, any> = {
     'Technical Depth': GraduationCap,
     'Learning Velocity': Zap,
     'Leadership': Users,
-    'Projects': Award,
+    'Products': Award,
 };
 
 export const About = () => {
     return (
         <section id="about" className="py-32 bg-[#070015] relative overflow-hidden">
             <AnimatedBackground />
-            
+
             {/* Ambient glows matching brand tokens */}
             <div className="absolute inset-0 pointer-events-none z-0">
                 <div className="absolute top-[20%] left-[-10%] w-[500px] h-[500px] rounded-full bg-gradient-to-br from-[#8B5CF6]/5 via-transparent to-transparent blur-[120px]" />
@@ -24,7 +24,7 @@ export const About = () => {
 
             <div className="section-container relative z-10">
                 <div className="grid lg:grid-cols-12 gap-16 items-center">
-                    
+
                     {/* Left Column Text Details */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
@@ -80,8 +80,7 @@ export const About = () => {
                             <div className="pl-4 border-l-2 border-[#EC4899]/30">
                                 <h4 className="text-white font-bold mb-1.5 text-base">Professional Experience</h4>
                                 <p className="text-sm font-normal text-white/50 leading-relaxed">
-                                    During my tenure at <span className="text-[#EC4899] font-semibold">{portfolioData.experience[1].company}</span> as an {portfolioData.experience[1].role},
-                                    I specialized in AI, ML, and Data Visualization. {portfolioData.experience[1].description}
+                                    I have applied my AI and systems engineering skills across enterprise and startup settings — from Novi Tech analytics dashboards to VDart’s AI/ML automation pipelines and Google’s campus developer community.
                                 </p>
                             </div>
 
@@ -119,29 +118,35 @@ export const About = () => {
                         transition={{ duration: 0.8 }}
                         className="lg:col-span-5 relative flex flex-col gap-6"
                     >
-                        {/* High-End Portrait Glow Frame */}
-                        <div className="relative group w-full">
-                            {/* Accent Glow backdrop matching brand system */}
-                            <div className="absolute -inset-1.5 bg-gradient-to-tr from-[#8B5CF6]/60 via-[#EC4899]/40 to-[#C084FC]/60 rounded-3xl blur-2xl group-hover:opacity-100 opacity-80 transition duration-700" />
+                        {/* High-End Circular Portrait with Animated Ring */}
+                        <div className="relative group w-full flex justify-center">
+                            {/* Rotating gradient ring */}
+                            <div className="absolute inset-0 flex justify-center items-center">
+                                <div
+                                    className="w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full opacity-80 group-hover:opacity-100 transition duration-700 blur-md"
+                                    style={{
+                                        background: 'conic-gradient(from 0deg, #8B5CF6, #EC4899, #C084FC, #8B5CF6)',
+                                        animation: 'spin 6s linear infinite',
+                                    }}
+                                />
+                            </div>
 
-                            {/* Image Container Frame */}
-                            <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-[0_24px_60px_rgba(0,0,0,0.8)]" style={{ background: 'rgba(7, 0, 21, 0.6)' }}>
-                                {/* Apple-grade Luxury Corner Accents */}
-                                <div className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-[#8B5CF6] rounded-tl-3xl z-10" />
-                                <div className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-[#EC4899] rounded-tr-3xl z-10" />
-                                <div className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-[#C084FC] rounded-bl-3xl z-10" />
-                                <div className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-[#8B5CF6] rounded-br-3xl z-10" />
+                            {/* Pulsing glow behind circle */}
+                            <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
+                                <div className="w-[320px] h-[320px] md:w-[400px] md:h-[400px] rounded-full bg-gradient-to-br from-[#8B5CF6]/30 via-[#EC4899]/20 to-[#C084FC]/30 blur-3xl animate-pulse" />
+                            </div>
 
-                                {/* Increased Image Dimension (h-[620px] full cover for perfect visibility!) */}
+                            {/* Circular Image Container */}
+                            <div className="relative w-[310px] h-[310px] md:w-[390px] md:h-[390px] rounded-full overflow-hidden border-4 border-[#070015] shadow-[0_0_60px_rgba(139,92,246,0.3)]">
                                 <img
                                     src={profilePic}
-                                    alt="Karuppasamy - Frontend Developer & AI Specialist"
-                                    className="w-full h-[620px] object-cover object-center transition-transform duration-700 group-hover:scale-[1.03] select-none"
+                                    alt="Karuppasamy - Founder Of Mr K AI Ecosystem"
+                                    className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.05] select-none"
                                     style={{ display: 'block' }}
                                 />
 
-                                {/* Ambient bottom linear gradient */}
-                                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#070015] via-[#070015]/40 to-transparent pointer-events-none" />
+                                {/* Subtle inner shadow overlay */}
+                                <div className="absolute inset-0 rounded-full shadow-[inset_0_-30px_40px_rgba(7,0,21,0.5)] pointer-events-none" />
                             </div>
                         </div>
 

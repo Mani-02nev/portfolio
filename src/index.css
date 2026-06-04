@@ -78,3 +78,9 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-storm rounded-full hover:bg-mint transition-colors;
 }
+
+/* Slow spin animation for profile ring */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

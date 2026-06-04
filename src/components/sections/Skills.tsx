@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { Code, Layout, Server, Cpu, Terminal, Globe, Smartphone } from 'lucide-react';
+import { Code, Layout, Server, Cpu, Terminal, Globe, Smartphone, Brain } from 'lucide-react';
 import { portfolioData } from '../../data/portfolioData';
 import { AnimatedBackground } from '../ui/AnimatedBackground';
 import { Frameworks } from '../ui/Frameworks';
@@ -11,6 +11,7 @@ const iconMap: Record<string, any> = {
     'Web Frameworks': Globe,
     'App Frameworks': Smartphone,
     'UI & Design Tools': Server,
+    'AI & ML': Brain,
     'DevOps & Tools': Terminal,
 };
 
@@ -20,6 +21,7 @@ const categoryColorMap: Record<string, { color: string, border: string, bg: stri
     'Web Frameworks': { color: 'text-cyan-400', border: 'border-cyan-500/20', bg: 'bg-cyan-500/5', accent: 'bg-cyan-500' },
     'App Frameworks': { color: 'text-fuchsia-400', border: 'border-fuchsia-500/20', bg: 'bg-fuchsia-500/5', accent: 'bg-fuchsia-500' },
     'UI & Design Tools': { color: 'text-emerald-400', border: 'border-emerald-500/20', bg: 'bg-emerald-500/5', accent: 'bg-emerald-500' },
+    'AI & ML': { color: 'text-blue-400', border: 'border-blue-500/20', bg: 'bg-blue-500/5', accent: 'bg-blue-500' },
     'DevOps & Tools': { color: 'text-purple-400', border: 'border-purple-500/20', bg: 'bg-purple-500/5', accent: 'bg-purple-500' },
 };
 

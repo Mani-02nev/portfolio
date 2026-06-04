@@ -466,24 +466,22 @@ Inspect his domain proficiency matrix below!`,
             };
         }
 
-        // 6. PRODUCTION PROJECTS
-        if (q.includes('project') || q.includes('work') || q.includes('code') || q.includes('build')) {
+        // 6. ECOSYSTEM PRODUCTS
+        if (q.includes('product') || q.includes('project') || q.includes('work') || q.includes('code') || q.includes('build')) {
             return {
-                text: `Karuppasamy has completed over 10+ production-grade systems, including:
+                text: `Karuppasamy has engineered a premium collection of AI platforms and enterprise systems:
 
-1. KS AI Resume Builder
-   ATS-optimized AI SaaS resume builder engine.
+1. Mr K AI Law Agent — Intelligent legal assistant (pickup-law-agent.vercel.app)
+2. AI HR Management System — Smart employee & recruitment platform (GitHub: HRMS)
+3. AI Sales Intelligence — Sales analytics and scoring dashboard (GitHub: Ai-Sales-Inteligence)
+4. AI Data Analytics + Assistant — Natural language query analytics agent (GitHub: Va_bot)
+5. AI Health Analytics & Sugar Predict — Blood sugar and diabetes risk prediction (GitHub: Suger-predect)
+6. KS AI Resume Builder — ATS-optimized AI SaaS builder (kscv.vercel.app)
+7. Agent K — Autonomous browser AI web agent (agent02.vercel.app)
+8. UNIVAULT — Lightweight PHP CSV-based e-commerce platform (univalut.onrender.com)
+9. AC Duct ERP System — Custom AC duct fabrication system deployed in Dubai
 
-2. Agent K
-   Autonomous browser AI web agent dashboard.
-
-3. AC Duct ERP
-   Fabrication operational systems in Dubai.
-
-4. UNIVAULT
-   Database-less e-commerce system.
-
-You can explore these in the Projects section of the portfolio!`,
+Explore all details and repository links in the Products section of the portfolio!`,
                 isVisual: false
             };
         }
@@ -594,7 +592,7 @@ If you require a formal PDF copy of his resume for your corporate database, plea
         }
 
         return {
-            text: "I am the KS Analytics Engine. I can show Karuppasamy's metrics, skills matrix, project lists, or academic qualifications. Try typing 'performance', 'skills matrix', or 'academic credentials'!",
+            text: "I am the KS Analytics Engine. I can show Karuppasamy's metrics, skills matrix, product lists, or academic qualifications. Try typing 'performance', 'skills matrix', or 'academic credentials'!",
             isVisual: false
         };
     };

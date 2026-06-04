@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="40" fill="#020617" />
+  <rect x="50" y="50" width="1100" height="800" rx="30" fill="url(#grad)" opacity="0.15" />
+  <rect x="120" y="120" width="960" height="660" rx="24" fill="#0f172a" stroke="#38bdf8" stroke-width="4" />
+  <text x="600" y="230" text-anchor="middle" font-size="58" font-family="Inter, sans-serif" fill="#ffffff" font-weight="800">VDart AI & ML Internship</text>
+  <text x="600" y="320" text-anchor="middle" font-size="30" font-family="Inter, sans-serif" fill="#a5f3fc">Certificate of Completion</text>
+  <text x="600" y="420" text-anchor="middle" font-size="22" font-family="Inter, sans-serif" fill="#cbd5e1">This certifies that</text>
+  <text x="600" y="470" text-anchor="middle" font-size="44" font-family="Inter, sans-serif" fill="#ffffff" font-weight="700">KARUPPASAMY M</text>
+  <text x="600" y="530" text-anchor="middle" font-size="22" font-family="Inter, sans-serif" fill="#cbd5e1">completed the AI & ML internship program at Vdart.</text>
+  <line x1="240" y1="620" x2="960" y2="620" stroke="#38bdf8" stroke-width="2" opacity="0.4" />
+  <text x="360" y="680" text-anchor="middle" font-size="20" font-family="Inter, sans-serif" fill="#94a3b8">Date: 2025</text>
+  <text x="840" y="680" text-anchor="middle" font-size="20" font-family="Inter, sans-serif" fill="#94a3b8">VDart Inc.</text>
+</svg>

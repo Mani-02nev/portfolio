@@ -1,13 +1,12 @@
-
 export const portfolioData = {
     personal: {
         name: "KARUPPASAMY M",
-        role: "AI & ML Engineering Intern",
+        role: "Founder Of Mr K AI Ecosystem",
         email: "karuppasamy.murugesan02@gmail.com",
         github: "https://github.com/Mani-02nev",
         linkedin: "https://www.linkedin.com/in/karuppasamy-m-b39995377/",
         location: "Trichy, India",
-        bio: "As a Computer Engineering graduate, I’ve built a solid foundation in computer science principles. My journey is defined by a relentless drive to solve complex problems using intelligent systems and scalable architectures."
+        bio: "As a Computer Engineering graduate, I’ve built a solid foundation in computer science principles. My journey is defined by a relentless drive to solve complex problems using intelligent systems, enterprise AI solutions at VDart, and developer community leadership through Google programs.",
     },
     experience: [
         {
@@ -84,7 +83,7 @@ export const portfolioData = {
                 'Contributed to production-grade AI microservices and REST API integrations.'
             ],
             tech: ['Python', 'Machine Learning', 'NLP', 'Computer Vision', 'FastAPI', 'TensorFlow'],
-            certificateUrl: ''
+            certificateUrl: '/certificates/vdart-internship.svg'
         },
         {
             role: 'Google Campus Ambassador',
@@ -128,11 +127,54 @@ export const portfolioData = {
             items: ['Responsive Design', 'UI/UX Principles', 'Figma', 'Component Architecture']
         },
         {
+            category: 'AI & ML',
+            items: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'NLP', 'Computer Vision']
+        },
+        {
             category: 'DevOps & Tools',
             items: ['Linux', 'Unix', 'DevOps', 'Git', 'GitHub']
         }
     ],
-    projects: [
+    products: [
+        {
+            title: 'Mr K AI Law Agent',
+            description: 'Intelligent legal assistant powered by AI that provides case law analysis, contract review, and legal document insights with multi-domain legal expertise.',
+            link: 'https://pickup-law-agent.vercel.app/',
+            tags: ['AI Agent', 'Full Stack', 'React', 'NLP'],
+            image: '/law_agent.png'
+        },
+        {
+            title: 'AI HR Management System',
+            description: 'AI-driven HR management platform with smart employee analytics, automated attendance tracking, leave management, and intelligent recruitment pipeline.',
+            link: '#',
+            github: 'https://github.com/Mani-02nev/HRMS',
+            tags: ['AI Platform', 'Full Stack', 'Python', 'Machine Learning'],
+            image: '/hrms_dashboard.png'
+        },
+        {
+            title: 'AI Sales Intelligence',
+            description: 'Smart sales analytics platform leveraging AI for lead scoring, revenue forecasting, pipeline optimization, and actionable business insights.',
+            link: '#',
+            github: 'https://github.com/Mani-02nev/Ai-Sales-Inteligence',
+            tags: ['AI Platform', 'Full Stack', 'Python', 'Data Analytics'],
+            image: '/sales_intelligence.png'
+        },
+        {
+            title: 'AI Data Analytics + Assistant',
+            description: 'Comprehensive data analytics platform with an integrated AI virtual assistant for natural language queries, real-time visualization, and automated insights.',
+            link: '#',
+            github: 'https://github.com/Mani-02nev/Va_bot',
+            tags: ['AI Agent', 'Data Analytics', 'Python', 'NLP'],
+            image: '/data_analytics.png'
+        },
+        {
+            title: 'AI Health Analytics & Sugar Predict',
+            description: 'AI-powered health analytics tool that predicts blood sugar levels, assesses diabetes risk, and provides personalized dietary recommendations using ML models.',
+            link: '#',
+            github: 'https://github.com/Mani-02nev/Suger-predect',
+            tags: ['Machine Learning', 'Python', 'Health Tech', 'Data Analytics'],
+            image: '/health_analytics.png'
+        },
         {
             title: 'KS AI Resume Builder',
             description: 'AI-powered SaaS platform that generates ATS-optimized resumes instantly using structured prompt engineering.',
@@ -159,12 +201,7 @@ export const portfolioData = {
             description: 'Full-stack unified digital system for AC duct fabrication companies in Dubai, replacing manual workflows from inquiry to reporting.',
             link: '#',
             tags: ['React', 'Node.js', 'PostgreSQL', 'React Native', 'Full Stack'],
-            image: '/assets/ac-project-img/image-1.png',
-            gallery: [
-                '/assets/ac-project-img/image-1.png',
-                '/assets/ac-project-img/image-2.png',
-                '/assets/ac-project-img/image-3.png',
-            ]
+            image: '/assets/ac-project-img/image-1.png'
         }
     ],
     certifications: [
@@ -175,6 +212,14 @@ export const portfolioData = {
             link: '/certificates/gogle.jpeg',
             icon: 'Award',
             color: 'from-blue-500/20 to-blue-600/20'
+        },
+        {
+            title: 'VDart AI & ML Internship',
+            issuer: 'VDart Inc.',
+            date: '2025',
+            link: '/certificates/vdart-internship.svg',
+            icon: 'Award',
+            color: 'from-blue-500/20 to-sky-600/20'
         },
         {
             title: 'Machine Learning Internship',
@@ -237,6 +282,6 @@ export const portfolioData = {
         { label: 'Technical Depth', value: 'High' },
         { label: 'Learning Velocity', value: 'Rapid' },
         { label: 'Leadership', value: 'Core' },
-        { label: 'Projects', value: '10+' }
+        { label: 'Products', value: '5+' }
     ]
 };

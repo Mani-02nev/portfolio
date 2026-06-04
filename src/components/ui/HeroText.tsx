@@ -64,8 +64,8 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 2 }}
                     >
-                        Computer Engineering Graduate specializing in AI/ML & Full-Stack Development.
-                        Transforming ideas into reality through code and innovation.
+                        Founder of Mr K AI Ecosystem — Building intelligent systems
+                        that redefine possibilities through AI innovation and scalable engineering.
                     </motion.p>
                 </div>
             </div>
