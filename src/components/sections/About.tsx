@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { GraduationCap, Award, Zap, Users } from 'lucide-react';
-import profilePic from '../../assets/profile-01.png';
+import profilePic from 'https://mr-k02.vercel.app/about.webp';
 import { portfolioData } from '../../data/portfolioData';
 import { AnimatedBackground } from '../ui/AnimatedBackground';
 
