@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { GraduationCap, Award, Zap, Users } from 'lucide-react';
-import profilePic from '../../src/assets/about.png';
+import profilePic from '../../assets/about.png';
 import { portfolioData } from '../../data/portfolioData';
 import { AnimatedBackground } from '../ui/AnimatedBackground';
 
@@ -118,35 +118,25 @@ export const About = () => {
                         transition={{ duration: 0.8 }}
                         className="lg:col-span-5 relative flex flex-col gap-6"
                     >
-                        {/* High-End Circular Portrait with Animated Ring */}
+                        {/* Clean Premium Portrait Container */}
                         <div className="relative group w-full flex justify-center">
-                            {/* Rotating gradient ring */}
-                            <div className="absolute inset-0 flex justify-center items-center">
-                                <div
-                                    className="w-[340px] h-[340px] md:w-[420px] md:h-[420px] rounded-full opacity-80 group-hover:opacity-100 transition duration-700 blur-md"
-                                    style={{
-                                        background: 'conic-gradient(from 0deg, #8B5CF6, #EC4899, #C084FC, #8B5CF6)',
-                                        animation: 'spin 6s linear infinite',
-                                    }}
-                                />
-                            </div>
-
-                            {/* Pulsing glow behind circle */}
+                            {/* Subtle ambient glow behind */}
                             <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-                                <div className="w-[320px] h-[320px] md:w-[400px] md:h-[400px] rounded-full bg-gradient-to-br from-[#8B5CF6]/30 via-[#EC4899]/20 to-[#C084FC]/30 blur-3xl animate-pulse" />
+                                <div className="w-[80%] h-[80%] bg-gradient-to-br from-[#8B5CF6]/20 to-[#EC4899]/20 blur-[80px] group-hover:blur-[100px] transition-all duration-700" />
                             </div>
 
-                            {/* Circular Image Container */}
-                            <div className="relative w-[310px] h-[310px] md:w-[390px] md:h-[390px] rounded-full overflow-hidden border-4 border-[#070015] shadow-[0_0_60px_rgba(139,92,246,0.3)]">
-                                <img
-                                    src={profilePic}
-                                    alt="Karuppasamy - Founder Of Mr K AI Ecosystem"
-                                    className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.05] select-none"
-                                    style={{ display: 'block' }}
-                                />
-
-                                {/* Subtle inner shadow overlay */}
-                                <div className="absolute inset-0 rounded-full shadow-[inset_0_-30px_40px_rgba(7,0,21,0.5)] pointer-events-none" />
+                            {/* Image Container */}
+                            <div className="relative w-full max-w-[400px] rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm p-2 shadow-2xl transition-all duration-700 group-hover:border-white/20">
+                                <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                                    <img
+                                        src={profilePic}
+                                        alt="Karuppasamy - Founder Of Mr K AI Ecosystem"
+                                        className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.03] select-none"
+                                        style={{ display: 'block' }}
+                                    />
+                                    {/* Clean overlay for premium feel */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-[#070015]/60 via-transparent to-transparent pointer-events-none mix-blend-multiply" />
+                                </div>
                             </div>
                         </div>
 
