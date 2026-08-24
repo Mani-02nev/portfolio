@@ -60,8 +60,8 @@ export const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="text-sm text-gray-500">GitHub</p>
-                                        <a href="https://github.com/Mani-02nev" target="_blank" rel="noreferrer" className="text-white font-medium hover:text-emerald-400 transition-colors">
-                                            github.com/Mani-02nev
+                                        <a href="https://github.com/karuppasamy-m02" target="_blank" rel="noreferrer" className="text-white font-medium hover:text-emerald-400 transition-colors">
+                                            github.com/karuppasamy-m02
                                         </a>
                                     </div>
                                 </div>
