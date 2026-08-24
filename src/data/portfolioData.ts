@@ -3,7 +3,7 @@ export const portfolioData = {
         name: "KARUPPASAMY M",
         role: "Founder Of Mr K AI Ecosystem",
         email: "karuppasamy.murugesan02@gmail.com",
-        github: "https://github.com/Mani-02nev",
+        github: "https://github.com/karuppasamy-m02",
         linkedin: "https://www.linkedin.com/in/karuppasamy-m-b39995377/",
         location: "Trichy, India",
         bio: "As a Computer Engineering graduate, I’ve built a solid foundation in computer science principles. My journey is defined by a relentless drive to solve complex problems using intelligent systems, enterprise AI solutions at VDart, and developer community leadership through Google programs.",
