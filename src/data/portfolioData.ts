@@ -83,7 +83,7 @@ export const portfolioData = {
                 'Collaborated with senior engineering teams on data preprocessing, feature engineering, and model optimization.'
             ],
             tech: ['Python', 'Machine Learning', 'NLP', 'Computer Vision', 'FastAPI', 'TensorFlow'],
-            certificateUrl: '/certificates/vdart-internship.png'
+            certificateUrl: '/certificates/vdart.pdf'
         },
         {
             role: 'AI & ML Engineering Intern',
@@ -281,7 +281,7 @@ export const portfolioData = {
             title: 'VDart AI & ML Internship',
             issuer: 'VDart Inc.',
             date: '2026',
-            link: '/certificates/vdart-internship.png',
+            link: '/certificates/vdart.pdf',
             image: '/certificates/vdart-internship.png',
             icon: 'Award',
             color: 'from-blue-500/20 to-sky-600/20'
