@@ -1,6 +1,5 @@
-"use client";
 import React, { useCallback, useEffect, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 
 interface FlipWordsProps {

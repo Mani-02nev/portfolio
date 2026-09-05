@@ -1,5 +1,5 @@
 import { FlipWords } from "../ui/FlipWords";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { FileDown, Sparkles, ArrowRight } from "lucide-react";
 
 const HeroText = () => {
