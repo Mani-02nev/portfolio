@@ -7,8 +7,13 @@ import googleLogo from '../../assets/google.png';
 import vdartLogo from '../../assets/vdart.png';
 import novitechLogo from '../../assets/novitech.png';
 import sitLogo from '../../assets/sit.png';
+import microsoftLogo from '../../assets/microsoft.svg';
+import awsLogo from '../../assets/aws.svg';
 
 const logoMap: Record<string, string> = {
+    'Microsoft': microsoftLogo,
+    'Amazon Web Services (AWS)': awsLogo,
+    'AWS': awsLogo,
     'Google': googleLogo,
     'VDart Inc.': vdartLogo,
     'Novi Tech Company': novitechLogo,
@@ -16,13 +21,15 @@ const logoMap: Record<string, string> = {
     'Seshasayee Institute of Technology': sitLogo,
 };
 
-// Symmetrical color palette for timeline stops
+// Symmetrical color palette for timeline stops (matches experience order)
 const accentColors = [
-    '#C084FC', // SIT (Academic Base)
-    '#EC4899', // Novi Tech DA (Analytics)
-    '#8B5CF6', // Novi Tech AI (AI Systems)
-    '#3B82F6', // VDart (Enterprise ML)
+    '#00a4ef', // Microsoft (Azure Blue)
+    '#FF9900', // AWS (Cloud Orange)
     '#ea4884', // Google (DevRel/Ambassador)
+    '#3B82F6', // VDart (Enterprise ML)
+    '#8B5CF6', // Novi Tech AI (AI Systems)
+    '#EC4899', // Novi Tech DA (Analytics)
+    '#C084FC', // SIT (Academic Base)
 ];
 
 export const Experience = () => {

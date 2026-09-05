@@ -48,8 +48,8 @@ export const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="text-sm text-gray-500">LinkedIn</p>
-                                        <a href="https://www.linkedin.com/in/karuppasamy-m-b39995377/" className="text-white font-medium hover:text-emerald-400 transition-colors">
-                                            linkedin.com/in/karuppasamy
+                                        <a href="https://www.linkedin.com/in/karuppasamy-m02/" target="_blank" rel="noreferrer" className="text-white font-medium hover:text-emerald-400 transition-colors">
+                                            linkedin.com/in/karuppasamy-m02
                                         </a>
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@ export const Contact = () => {
                         <form className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label htmlFor="name" className="text-sm font-medium text-gray-400">FullName</label>
+                                    <label htmlFor="name" className="text-sm font-medium text-gray-400">Full Name</label>
                                     <input
                                         type="text"
                                         id="name"

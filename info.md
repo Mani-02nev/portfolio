@@ -3,8 +3,8 @@
 
 **Location:** Trichy, India  
 **Email:** karuppasamy.murugesan02@gmail.com  
-**LinkedIn:** [linkedin.com/in/karuppasamy-m-b39995377/](https://www.linkedin.com/in/karuppasamy-m-b39995377/)  
-**GitHub:** [github.com/Mani-02nev](https://github.com/Mani-02nev)  
+**LinkedIn:** [linkedin.com/in/karuppasamy-m02/](https://www.linkedin.com/in/karuppasamy-m02/)  
+**GitHub:** [github.com/karuppasamy-m02](https://github.com/karuppasamy-m02)  
 **Availability:** Open for MNC opportunities and high-impact software engineering roles (Open to relocation & global opportunities)
 
 ---
@@ -35,6 +35,20 @@ As a Computer Engineering graduate, I have built a solid foundation in computer 
 ---
 
 ## Professional Experience
+
+### Microsoft Learn Student Ambassador | Microsoft
+*India | 2026 - Present*
+- Selected as a Microsoft Learn Student Ambassador (MLSA) for 2026, leading campus developer initiatives.
+- Conduct technical bootcamps and workshops on Microsoft Azure, Cloud Computing, and AI tools.
+- Mentor student developers on cloud deployments, GitHub workflows, and modern software engineering.
+- Build and foster an inclusive developer community through study groups and hackathon mentorship.
+
+### AWS Campus Builder | Amazon Web Services (AWS)
+*India | 2026 - Present*
+- Serving as an AWS Campus Builder, spearheading cloud-native exploration and serverless architecture labs.
+- Facilitate interactive hands-on labs on AWS core services (EC2, S3, Lambda, API Gateway).
+- Guide peers in understanding scalable cloud infrastructure, serverless models, and cost optimization.
+- Bridge student engineers with AWS documentation, certification paths, and cloud architectural patterns.
 
 ### Google Campus Ambassador | Google
 *India | 2026 - Present*
@@ -78,6 +92,8 @@ As a Computer Engineering graduate, I have built a solid foundation in computer 
 
 ## Key Projects & Products (Mr K AI Ecosystem)
 
+- **ExpenseFlow (Smart Expense Tracker):** Modern personal finance & expense tracking dashboard with intuitive budget categorization and analytics. *(React, TypeScript, Tailwind CSS)*
+- **Butter MV (Cinematic Streaming Platform):** Ultra-premium dark-themed movie streaming and OTT platform featuring 4K UHD exploration and fast category filtering. *(React, Tailwind CSS, Full Stack)*
 - **Mr K AI Law Agent:** Intelligent legal assistant powered by AI for case law analysis and contract review. *(React, NLP)*
 - **AI HR Management System:** AI-driven HR platform with smart analytics, automated attendance, and intelligent recruitment. *(Python, ML)*
 - **AI Sales Intelligence:** Smart sales analytics platform for lead scoring, revenue forecasting, and pipeline optimization. *(Python, Data Analytics)*
@@ -92,12 +108,13 @@ As a Computer Engineering graduate, I have built a solid foundation in computer 
 
 ## Certifications
 
-1. **Google Core Python Certification** - *Google (2025)*
-2. **VDart AI & ML Internship** - *VDart Inc. (2025)*
-3. **Machine Learning Internship** - *Professional Development (2025)*
-4. **Artificial Intelligence Internship** - *Technical Institute (2025)*
-5. **Data Analytics Internship** - *Novi Tech Certification (2025)*
-6. **Artificial Intelligence 30-day Masterclass** - *Technical Excellence (2025)*
-7. **Artificial Intelligence ROAD MAP** - *Technical Excellence (2025)*
-8. **5-Day AI Agents Intensive Course** - *Google Cloud / Technical Excellence (2025)*
-9. **MAANG Developer** - *Career Excellence Track (2025)*
+1. **Microsoft Learn Student Ambassador** - *Microsoft (2026)*
+2. **Google Core Python Certification** - *Google (2025)*
+3. **VDart AI & ML Internship** - *VDart Inc. (2025)*
+4. **Machine Learning Internship** - *Professional Development (2025)*
+5. **Artificial Intelligence Internship** - *Technical Institute (2025)*
+6. **Data Analytics Internship** - *Novi Tech Certification (2025)*
+7. **Artificial Intelligence 30-Day Masterclass** - *Technical Excellence (2025)*
+8. **Artificial Intelligence Roadmap** - *Technical Excellence (2025)*
+9. **5-Day AI Agents Intensive Course** - *Google Cloud / Technical Excellence (2025)*
+10. **MAANG Developer** - *Career Excellence Track (2025)*

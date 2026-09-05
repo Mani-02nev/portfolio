@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X, Code2, FileDown } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 const navLinks = [
@@ -50,19 +50,36 @@ export const Navbar = () => {
                     </motion.a>
 
                     {/* Desktop Nav */}
-                    <div className="hidden md:flex items-center gap-8">
+                    <div className="hidden md:flex items-center gap-6 lg:gap-8">
                         {navLinks.map((link, i) => (
                             <motion.a
                                 key={link.name}
                                 href={link.href}
                                 initial={{ opacity: 0, y: -10 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: i * 0.1 }}
+                                transition={{ delay: i * 0.08 }}
                                 className="nav-link"
                             >
                                 {link.name}
                             </motion.a>
                         ))}
+                        
+                        {/* Download Resume Button */}
+                        <motion.a
+                            href="/Karuppasamy_M_Resume.pdf"
+                            download="Karuppasamy_M_Resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.45 }}
+                            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-emerald-500/30 text-white text-xs font-bold tracking-wide uppercase transition-all duration-300 group shadow-sm"
+                            title="Download Resume"
+                        >
+                            <FileDown className="w-4 h-4 text-emerald-400 group-hover:translate-y-0.5 transition-transform" />
+                            <span>Resume</span>
+                        </motion.a>
+
                         <motion.a
                             href="#contact"
                             initial={{ opacity: 0, scale: 0.9 }}
@@ -106,16 +123,27 @@ export const Navbar = () => {
                                     {link.name}
                                 </a>
                             ))}
+
+                            <a
+                                href="/Karuppasamy_M_Resume.pdf"
+                                download="Karuppasamy_M_Resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setIsOpen(false)}
+                                className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-white/5 border border-white/10 text-white font-semibold text-center hover:bg-white/10 transition-colors"
+                            >
+                                <FileDown className="w-4 h-4 text-emerald-400" />
+                                Download Resume
+                            </a>
+
                             <a
                                 href="#contact"
                                 onClick={() => setIsOpen(false)}
-                                className="btn-primary w-full"
+                                className="btn-primary w-full text-center block"
                             >
                                 Hire Me
                             </a>
-
                         </div>
-
                     </motion.div>
                 )}
             </AnimatePresence>

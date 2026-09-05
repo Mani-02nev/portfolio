@@ -4,86 +4,48 @@ export const portfolioData = {
         role: "Founder Of Mr K AI Ecosystem",
         email: "karuppasamy.murugesan02@gmail.com",
         github: "https://github.com/karuppasamy-m02",
-        linkedin: "https://www.linkedin.com/in/karuppasamy-m-b39995377/",
+        linkedin: "https://www.linkedin.com/in/karuppasamy-m02/",
         location: "Trichy, India",
         bio: "As a Computer Engineering graduate, I’ve built a solid foundation in computer science principles. My journey is defined by a relentless drive to solve complex problems using intelligent systems, enterprise AI solutions at VDart, and developer community leadership through Google programs.",
     },
     experience: [
         {
-            role: 'Computer Engineering Student',
-            company: 'Seshasayee Institute of Technology',
-            companyUrl: 'https://www.sittrichy.in/',
-            location: 'Tiruchirappalli',
-            period: '2025 - 2027',
-            type: 'education',
-            typeLabel: 'Education',
-            typeColor: 'purple',
-            description: 'Pursuing a comprehensive curriculum in Computer Engineering, with a focus on modern software systems and emerging technologies.',
-            achievements: [
-                'Major in Computer Engineering with specialization in AI & Systems.',
-                'Engaged in advanced technical studies and practical lab work.',
-                'Building strong fundamentals in algorithms and system architecture.',
-                'Active participant in hackathons, coding competitions, and tech clubs.'
-            ],
-            tech: ['Computer Science', 'Algorithms', 'Systems Design', 'Engineering'],
-            certificateUrl: ''
-        },
-        {
-            role: 'Data Analytics Intern',
-            company: 'Novi Tech Company',
-            companyUrl: 'https://novitechrd.com/',
-            location: 'Remote',
-            period: 'Dec 2023 – Jan 2024',
-            type: 'internship',
-            typeLabel: 'Internship',
-            typeColor: 'orange',
-            description: 'One-month intensive internship focused on data exploration, statistical analysis, and dashboard development.',
-            achievements: [
-                'Performed comprehensive data cleaning and exploratory data analysis on diverse datasets.',
-                'Designed and implemented interactive data dashboards for business intelligence.',
-                'Applied statistical techniques to identify trends and patterns in complex numerical data.',
-                'Generated detailed reports and presentations for technical and non-technical stakeholders.'
-            ],
-            tech: ['Data Analytics', 'Excel', 'Tableau', 'Statistics', 'SQL'],
-            certificateUrl: '/certificates/KARUPPASAMY M (3).pdf'
-        },
-        {
-            role: 'AI & ML Engineering Intern',
-            company: 'Novi Tech Company',
-            companyUrl: 'https://novitechrd.com/',
-            location: 'Remote / Coimbatore',
-            period: 'Summer 2024',
-            type: 'internship',
-            typeLabel: 'Internship',
-            typeColor: 'emerald',
-            description: 'Led development of intelligent systems and interactive user interfaces for AI-driven analytics tools at Novi Tech.',
-            achievements: [
-                'Architected a real-time data visualization dashboard using React for AI performance monitoring.',
-                'Implemented machine learning models for predictive analysis, integrating them into the frontend layer.',
-                'Collaborated on designing high-end UX for complex data storytelling and AI interactions.',
-                'Optimized system efficiency and frontend responsiveness for large-scale datasets.',
-            ],
-            tech: ['AI/ML', 'React', 'Python', 'Tailwind CSS', 'Chart.js'],
-            certificateUrl: '/certificates/KARUPPASAMY M (2).pdf'
-        },
-        {
-            role: 'AI & ML Engineering Intern',
-            company: 'VDart Inc.',
-            companyUrl: 'https://www.vdart.com/',
-            location: 'Onsite / Tiruchirappalli',
-            period: '2025',
-            type: 'internship',
-            typeLabel: 'Internship',
+            role: 'Microsoft Learn Student Ambassador',
+            company: 'Microsoft',
+            companyUrl: 'https://mvp.microsoft.com/studentambassadors',
+            location: 'India',
+            period: '2026 - Present',
+            type: 'ambassador',
+            typeLabel: 'Ambassador',
             typeColor: 'blue',
-            description: 'Intensive AI & ML internship at VDart, a global staffing and technology solutions company, working on real-world machine learning and AI-driven automation projects.',
+            description: 'Selected as a Microsoft Learn Student Ambassador (MLSA) for 2026, leading campus developer initiatives, organizing Azure & AI technical bootcamps, and empowering student engineers.',
             achievements: [
-                'Developed and deployed machine learning models for enterprise automation workflows.',
-                'Built AI pipelines integrating NLP and computer vision capabilities.',
-                'Collaborated with senior engineers on data preprocessing and model optimization.',
-                'Contributed to production-grade AI microservices and REST API integrations.'
+                'Conduct technical sessions and hands-on workshops on Microsoft Azure, Cloud Architecture, and AI tools.',
+                'Mentor student developers on cloud deployments, GitHub collaborative workflows, and modern software engineering.',
+                'Drive technical awareness and certification readiness for Microsoft Cloud technologies across campus.',
+                'Build and foster an inclusive developer community through study groups and hackathon mentorship.'
             ],
-            tech: ['Python', 'Machine Learning', 'NLP', 'Computer Vision', 'FastAPI', 'TensorFlow'],
-            certificateUrl: '/certificates/vdart-internship.svg'
+            tech: ['Microsoft Azure', 'Cloud Computing', 'AI Services', 'DevOps', 'Community Leadership'],
+            certificateUrl: '/certificates/microsoft.png'
+        },
+        {
+            role: 'AWS Campus Builder',
+            company: 'Amazon Web Services (AWS)',
+            companyUrl: 'https://aws.amazon.com/developer/community/',
+            location: 'India',
+            period: '2026 - Present',
+            type: 'ambassador',
+            typeLabel: 'Builder',
+            typeColor: 'orange',
+            description: 'Serving as an AWS Campus Builder, spearheading cloud-native exploration, serverless architecture labs, and cloud fundamentals enablement across the student developer ecosystem.',
+            achievements: [
+                'Facilitate interactive hands-on labs on AWS core services (EC2, S3, Lambda, API Gateway).',
+                'Guide peers in understanding scalable cloud infrastructure, serverless models, and cost optimization.',
+                'Encourage participation in AWS Community Days, cloud hackathons, and builder challenges.',
+                'Bridge student engineers with AWS documentation, certification paths, and cloud architectural patterns.'
+            ],
+            tech: ['AWS', 'Cloud Architecture', 'Serverless', 'Lambda', 'Cloud Infrastructure'],
+            certificateUrl: ''
         },
         {
             role: 'Google Campus Ambassador',
@@ -94,14 +56,90 @@ export const portfolioData = {
             type: 'ambassador',
             typeLabel: 'Ambassador',
             typeColor: 'google',
-            description: 'Selected as a Google Campus Ambassador for 2026, representing Google Developer ecosystem on campus, driving tech awareness and community engagement across the institution.',
+            description: 'Selected as a Google Campus Ambassador for 2026, spearheading Google Developer ecosystem initiatives, developer workshops, and AI/Cloud student enablement programs across campus.',
             achievements: [
-                'Represent Google products, programs, and developer tools at the campus level.',
-                'Organize and host developer events, workshops, and study jams for students.',
-                'Drive awareness of Google Cloud, Android, and AI/ML platforms among peers.',
-                'Bridge students with Google developer resources and career opportunities.'
+                'Lead Google developer workshops, hackathons, and cloud study jams for student developers.',
+                'Drive adoption and technical literacy in Google Cloud, Android, and Generative AI technologies.',
+                'Connect students directly with Google developer resources, mentorship, and career pathways.',
+                'Facilitate peer-to-peer technical development and hands-on developer tooling demos.'
             ],
             tech: ['Google Cloud', 'Android', 'AI/ML', 'Community Leadership', 'Developer Relations'],
+            certificateUrl: ''
+        },
+        {
+            role: 'AI & ML Engineering Intern',
+            company: 'VDart Inc.',
+            companyUrl: 'https://www.vdart.com/',
+            location: 'Onsite / Tiruchirappalli',
+            period: '2025',
+            type: 'internship',
+            typeLabel: 'Internship',
+            typeColor: 'blue',
+            description: 'Intensive enterprise AI & ML internship engineering real-world machine learning automation pipelines, NLP microservices, and computer vision workflows.',
+            achievements: [
+                'Engineered and deployed production-grade machine learning models for enterprise automation workflows.',
+                'Constructed scalable AI pipelines integrating Natural Language Processing (NLP) and Computer Vision.',
+                'Developed high-performance AI microservices and REST API integrations using FastAPI and TensorFlow.',
+                'Collaborated with senior engineering teams on data preprocessing, feature engineering, and model optimization.'
+            ],
+            tech: ['Python', 'Machine Learning', 'NLP', 'Computer Vision', 'FastAPI', 'TensorFlow'],
+            certificateUrl: '/certificates/vdart-internship.svg'
+        },
+        {
+            role: 'AI & ML Engineering Intern',
+            company: 'Novi Tech Company',
+            companyUrl: 'https://novitechrd.com/',
+            location: 'Remote / Coimbatore',
+            period: 'Summer 2024',
+            type: 'internship',
+            typeLabel: 'Internship',
+            typeColor: 'emerald',
+            description: 'Led development of intelligent systems and interactive user interfaces for AI-driven predictive analytics tools at Novi Tech.',
+            achievements: [
+                'Architected real-time data visualization dashboards in React for monitoring model performance and inferences.',
+                'Integrated predictive machine learning models seamlessly into modern frontend UI layers.',
+                'Engineered reusable UI component architecture for AI telemetry and complex data storytelling.',
+                'Optimized system efficiency, asynchronous data fetching, and frontend responsiveness for large datasets.'
+            ],
+            tech: ['AI/ML', 'React', 'Python', 'Tailwind CSS', 'Chart.js'],
+            certificateUrl: '/certificates/KARUPPASAMY M (2).pdf'
+        },
+        {
+            role: 'Data Analytics Intern',
+            company: 'Novi Tech Company',
+            companyUrl: 'https://novitechrd.com/',
+            location: 'Remote',
+            period: 'Dec 2023 – Jan 2024',
+            type: 'internship',
+            typeLabel: 'Internship',
+            typeColor: 'orange',
+            description: 'Intensive data analytics internship focused on exploratory data analysis (EDA), statistical modeling, and business intelligence dashboard development.',
+            achievements: [
+                'Executed comprehensive data cleaning, anomaly detection, and exploratory analysis across diverse datasets.',
+                'Designed and deployed interactive business intelligence dashboards using SQL, Excel, and Tableau.',
+                'Applied statistical techniques to extract actionable insights and identify key performance drivers.',
+                'Generated clear, analytical reports and presentation decks for technical and non-technical stakeholders.'
+            ],
+            tech: ['Data Analytics', 'Excel', 'Tableau', 'Statistics', 'SQL'],
+            certificateUrl: '/certificates/KARUPPASAMY M (3).pdf'
+        },
+        {
+            role: 'Computer Engineering Student',
+            company: 'Seshasayee Institute of Technology',
+            companyUrl: 'https://www.sittrichy.in/',
+            location: 'Tiruchirappalli',
+            period: '2025 - 2027',
+            type: 'education',
+            typeLabel: 'Education',
+            typeColor: 'purple',
+            description: 'Pursuing comprehensive curriculum in Computer Engineering with specialized focus on modern software systems, algorithms, and intelligent architectures.',
+            achievements: [
+                'Specialization in Computer Engineering with focus on AI & Intelligent Systems.',
+                'Engaged in advanced technical coursework, systems design, and practical engineering labs.',
+                'Building strong foundations in algorithms, data structures, and distributed architectures.',
+                'Active participant and competitor in national-level hackathons and technical symposiums.'
+            ],
+            tech: ['Computer Science', 'Algorithms', 'Systems Design', 'Engineering'],
             certificateUrl: ''
         }
     ],
@@ -137,6 +175,22 @@ export const portfolioData = {
     ],
     products: [
         {
+            title: 'ExpenseFlow - Smart Expense Tracker',
+            description: 'Modern, responsive personal finance & expense tracking dashboard with intuitive budget categorization, analytics visualizations, and multi-theme customization.',
+            link: 'https://expense-tracker-weld-nine-85.vercel.app/',
+            github: 'https://github.com/karuppasamy-m02/Expense-Tracker',
+            tags: ['FinTech', 'Full Stack', 'React', 'TypeScript', 'Tailwind CSS'],
+            image: '/expense_tracker.png'
+        },
+        {
+            title: 'Butter MV - Streaming & OTT Platform',
+            description: 'Ultra-premium dark-themed movie streaming and OTT download platform featuring 4K UHD video exploration, fast category filtering, and immersive responsive UI.',
+            link: 'https://butter-mv.vercel.app/',
+            github: 'https://github.com/karuppasamy-m02/butter-mv',
+            tags: ['Streaming', 'Full Stack', 'React', 'Tailwind CSS', 'OTT Platform'],
+            image: '/butter_mv.png'
+        },
+        {
             title: 'Mr K AI Law Agent',
             description: 'Intelligent legal assistant powered by AI that provides case law analysis, contract review, and legal document insights with multi-domain legal expertise.',
             link: 'https://pickup-law-agent.vercel.app/',
@@ -147,7 +201,7 @@ export const portfolioData = {
             title: 'AI HR Management System',
             description: 'AI-driven HR management platform with smart employee analytics, automated attendance tracking, leave management, and intelligent recruitment pipeline.',
             link: '#',
-            github: 'https://github.com/Mani-02nev/HRMS',
+            github: 'https://github.com/karuppasamy-m02/HRMS',
             tags: ['AI Platform', 'Full Stack', 'Python', 'Machine Learning'],
             image: '/hrms_dashboard.png'
         },
@@ -155,7 +209,7 @@ export const portfolioData = {
             title: 'AI Sales Intelligence',
             description: 'Smart sales analytics platform leveraging AI for lead scoring, revenue forecasting, pipeline optimization, and actionable business insights.',
             link: '#',
-            github: 'https://github.com/Mani-02nev/Ai-Sales-Inteligence',
+            github: 'https://github.com/karuppasamy-m02/Ai-Sales-Inteligence',
             tags: ['AI Platform', 'Full Stack', 'Python', 'Data Analytics'],
             image: '/sales_intelligence.png'
         },
@@ -163,7 +217,7 @@ export const portfolioData = {
             title: 'AI Data Analytics + Assistant',
             description: 'Comprehensive data analytics platform with an integrated AI virtual assistant for natural language queries, real-time visualization, and automated insights.',
             link: '#',
-            github: 'https://github.com/Mani-02nev/Va_bot',
+            github: 'https://github.com/karuppasamy-m02/Va_bot',
             tags: ['AI Agent', 'Data Analytics', 'Python', 'NLP'],
             image: '/data_analytics.png'
         },
@@ -171,7 +225,7 @@ export const portfolioData = {
             title: 'AI Health Analytics & Sugar Predict',
             description: 'AI-powered health analytics tool that predicts blood sugar levels, assesses diabetes risk, and provides personalized dietary recommendations using ML models.',
             link: '#',
-            github: 'https://github.com/Mani-02nev/Suger-predect',
+            github: 'https://github.com/karuppasamy-m02/Suger-predect',
             tags: ['Machine Learning', 'Python', 'Health Tech', 'Data Analytics'],
             image: '/health_analytics.png'
         },
@@ -205,6 +259,14 @@ export const portfolioData = {
         }
     ],
     certifications: [
+        {
+            title: 'Microsoft Learn Student Ambassador',
+            issuer: 'Microsoft',
+            date: '2026',
+            link: '/certificates/microsoft.png',
+            icon: 'Award',
+            color: 'from-blue-500/20 to-cyan-600/20'
+        },
         {
             title: 'Google Core Python Certification',
             issuer: 'Google',
@@ -246,7 +308,7 @@ export const portfolioData = {
             color: 'from-orange-500/20 to-orange-600/20'
         },
         {
-            title: 'Artificial Intelligence 30day masterclass',
+            title: 'Artificial Intelligence 30-Day Masterclass',
             issuer: 'Technical Excellence',
             date: '2025',
             link: '/certificates/KARUPPASAMY M.pdf',
@@ -254,7 +316,7 @@ export const portfolioData = {
             color: 'from-cyan-500/20 to-cyan-600/20'
         },
         {
-            title: 'Artificial Intelligence ROAD MAP',
+            title: 'Artificial Intelligence Roadmap',
             issuer: 'Technical Excellence',
             date: '2025',
             link: '/certificates/HCL GUVI Certification - 1h6nM1sg71C5972067.png',
@@ -263,14 +325,14 @@ export const portfolioData = {
         },
         {
             title: '5-Day AI Agents Intensive Course',
-            issuer: 'Google Cloud / technical Excellence',
+            issuer: 'Google Cloud / Technical Excellence',
             date: '2025',
             link: '/certificates/5-Day AI Agents Intensive Course with Google.png',
             icon: 'Award',
             color: 'from-emerald-500/20 to-emerald-600/20'
         },
         {
-            title: 'MAANG Devloper',
+            title: 'MAANG Developer',
             issuer: 'Career Excellence Track',
             date: '2025',
             link: '/certificates/maang.png',

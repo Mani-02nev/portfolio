@@ -23,8 +23,8 @@
 | **Name** | KARUPPASAMY M |
 | **Role** | Founder Of Mr K AI Ecosystem |
 | **Email** | karuppasamy.murugesan02@gmail.com |
-| **GitHub** | https://github.com/Mani-02nev |
-| **LinkedIn** | https://www.linkedin.com/in/karuppasamy-m-b39995377/ |
+| **GitHub** | https://github.com/karuppasamy-m02 |
+| **LinkedIn** | https://www.linkedin.com/in/karuppasamy-m02/ |
 | **Location** | Trichy, India |
 | **Availability** | Open for MNC opportunities and high-impact software engineering roles |
 | **Relocation** | Open to relocation, co-located programs, and global opportunities |
@@ -249,7 +249,21 @@ Linux, Unix, DevOps, Git, GitHub
 
 ## Products (Mr K AI Ecosystem)
 
-### 1. Mr K AI Law Agent
+### 1. ExpenseFlow - Smart Expense Tracker
+- **Description:** Modern, responsive personal finance & expense tracking dashboard with intuitive budget categorization, analytics visualizations, and multi-theme customization.
+- **Live URL:** https://expense-tracker-weld-nine-85.vercel.app/
+- **GitHub:** https://github.com/karuppasamy-m02/Expense-Tracker
+- **Tags:** FinTech, Full Stack, React, TypeScript, Tailwind CSS
+- **Image:** /expense_tracker.png
+
+### 2. Butter MV - Streaming & OTT Platform
+- **Description:** Ultra-premium dark-themed movie streaming and OTT download platform featuring 4K UHD video exploration, fast category filtering, and immersive responsive UI.
+- **Live URL:** https://butter-mv.vercel.app/
+- **GitHub:** https://github.com/karuppasamy-m02/butter-mv
+- **Tags:** Streaming, Full Stack, React, Tailwind CSS, OTT Platform
+- **Image:** /butter_mv.png
+
+### 3. Mr K AI Law Agent
 - **Description:** Intelligent legal assistant powered by AI that provides case law analysis, contract review, and legal document insights with multi-domain legal expertise.
 - **Live URL:** https://pickup-law-agent.vercel.app/
 - **Tags:** AI Agent, Full Stack, React, NLP
@@ -308,15 +322,16 @@ Linux, Unix, DevOps, Git, GitHub
 
 | # | Title | Issuer | Date | Certificate Link |
 |---|-------|--------|------|------------------|
-| 1 | Google Core Python Certification | Google | 2025 | /certificates/gogle.jpeg |
-| 2 | VDart AI & ML Internship | VDart Inc. | 2025 | /certificates/vdart-internship.svg |
-| 3 | Machine Learning Internship | Professional Development | 2025 | /certificates/KARUPPASAMY M (1).pdf |
-| 4 | Artificial Intelligence Internship | Technical Institute | 2025 | /certificates/KARUPPASAMY M (2).pdf |
-| 5 | Data Analytics Internship | Novi Tech Certification | 2025 | /certificates/KARUPPASAMY M (3).pdf |
-| 6 | Artificial Intelligence 30day masterclass | Technical Excellence | 2025 | /certificates/KARUPPASAMY M.pdf |
-| 7 | Artificial Intelligence ROAD MAP | Technical Excellence | 2025 | /certificates/HCL GUVI Certification - 1h6nM1sg71C5972067.png |
-| 8 | 5-Day AI Agents Intensive Course | Google Cloud / technical Excellence | 2025 | /certificates/5-Day AI Agents Intensive Course with Google.png |
-| 9 | MAANG Devloper | Career Excellence Track | 2025 | /certificates/maang.png |
+| 1 | Microsoft Learn Student Ambassador | Microsoft | 2026 | /certificates/microsoft.png |
+| 2 | Google Core Python Certification | Google | 2025 | /certificates/gogle.jpeg |
+| 3 | VDart AI & ML Internship | VDart Inc. | 2025 | /certificates/vdart-internship.svg |
+| 4 | Machine Learning Internship | Professional Development | 2025 | /certificates/KARUPPASAMY M (1).pdf |
+| 5 | Artificial Intelligence Internship | Technical Institute | 2025 | /certificates/KARUPPASAMY M (2).pdf |
+| 6 | Data Analytics Internship | Novi Tech Certification | 2025 | /certificates/KARUPPASAMY M (3).pdf |
+| 7 | Artificial Intelligence 30-Day Masterclass | Technical Excellence | 2025 | /certificates/KARUPPASAMY M.pdf |
+| 8 | Artificial Intelligence Roadmap | Technical Excellence | 2025 | /certificates/HCL GUVI Certification - 1h6nM1sg71C5972067.png |
+| 9 | 5-Day AI Agents Intensive Course | Google Cloud / Technical Excellence | 2025 | /certificates/5-Day AI Agents Intensive Course with Google.png |
+| 10 | MAANG Developer | Career Excellence Track | 2025 | /certificates/maang.png |
 
 ---
 
@@ -325,8 +340,8 @@ Linux, Unix, DevOps, Git, GitHub
 | Channel | Value |
 |---------|-------|
 | **Email** | karuppasamy.murugesan02@gmail.com |
-| **LinkedIn** | https://www.linkedin.com/in/karuppasamy-m-b39995377/ |
-| **GitHub** | https://github.com/Mani-02nev |
+| **LinkedIn** | https://www.linkedin.com/in/karuppasamy-m02/ |
+| **GitHub** | https://github.com/karuppasamy-m02 |
 
 **Contact Form Fields:** Full Name, Email Address, Subject, Message
 
@@ -367,6 +382,8 @@ Karuppasamy brings rare technical versatility: combining solid systems foundatio
 - `src/assets/profile-01.png`
 
 ### Product Images
+- /expense_tracker.png
+- /butter_mv.png
 - /law_agent.png
 - /hrms_dashboard.png
 - /sales_intelligence.png
@@ -378,6 +395,7 @@ Karuppasamy brings rare technical versatility: combining solid systems foundatio
 - /assets/ac-project-img/image-1.png
 
 ### Certificate Files
+- /certificates/microsoft.png
 - /certificates/gogle.jpeg
 - /certificates/vdart-internship.svg
 - /certificates/KARUPPASAMY M (1).pdf

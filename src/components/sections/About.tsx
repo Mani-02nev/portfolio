@@ -70,12 +70,17 @@ export const About = () => {
                                 {portfolioData.personal.bio}
                             </p>
 
-                            <div className="pl-4 border-l-2 border-[#8B5CF6]/30">
-                                <h4 className="text-white font-bold mb-1.5 text-base">Academic Foundation</h4>
-                                <p className="text-sm font-normal text-white/50 leading-relaxed">
-                                    Currently pursuing my degree at <span className="text-[#C084FC] font-semibold">{portfolioData.experience[0].company}</span> in {portfolioData.experience[0].location}. {portfolioData.experience[0].description}
-                                </p>
-                            </div>
+                            {(() => {
+                                const edu = portfolioData.experience.find(e => e.type === 'education') || portfolioData.experience[portfolioData.experience.length - 1];
+                                return (
+                                    <div className="pl-4 border-l-2 border-[#8B5CF6]/30">
+                                        <h4 className="text-white font-bold mb-1.5 text-base">Academic Foundation</h4>
+                                        <p className="text-sm font-normal text-white/50 leading-relaxed">
+                                            Currently pursuing my degree at <span className="text-[#C084FC] font-semibold">{edu.company}</span> in {edu.location}. {edu.description}
+                                        </p>
+                                    </div>
+                                );
+                            })()}
 
                             <div className="pl-4 border-l-2 border-[#EC4899]/30">
                                 <h4 className="text-white font-bold mb-1.5 text-base">Professional Experience</h4>

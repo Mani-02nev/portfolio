@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#CA8A04" />
+      <stop offset="100%" stop-color="#EAB308" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="850" fill="url(#bgGrad)" />
+  
+  <!-- Outer Double Border -->
+  <rect x="30" y="30" width="1140" height="790" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="3" opacity="0.75" />
+  <rect x="45" y="45" width="1110" height="760" rx="12" fill="none" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Microsoft 4-Color Squares Top Left -->
+  <g transform="translate(100, 90)">
+    <rect x="0" y="0" width="22" height="22" fill="#f25022" />
+    <rect x="26" y="0" width="22" height="22" fill="#7fba00" />
+    <rect x="0" y="26" width="22" height="22" fill="#00a4ef" />
+    <rect x="26" y="26" width="22" height="22" fill="#ffb900" />
+    <text x="62" y="34" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="28" letter-spacing="1">Microsoft</text>
+  </g>
+
+  <!-- Badge Top Right -->
+  <g transform="translate(980, 80)">
+    <rect x="0" y="0" width="120" height="32" rx="16" fill="rgba(56,189,248,0.12)" stroke="#38BDF8" stroke-width="1"/>
+    <text x="60" y="21" fill="#38BDF8" font-family="system-ui, sans-serif" font-weight="700" font-size="12" text-anchor="middle" letter-spacing="2">VERIFIED</text>
+  </g>
+
+  <!-- Certificate Subtitle & Title -->
+  <text x="600" y="210" fill="#94a3b8" font-family="system-ui, sans-serif" font-weight="600" font-size="15" text-anchor="middle" letter-spacing="6">CERTIFICATE OF RECOGNITION &amp; ACHIEVEMENT</text>
+  
+  <text x="600" y="270" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="800" font-size="38" text-anchor="middle" letter-spacing="1">Microsoft Learn Student Ambassador</text>
+  <text x="600" y="315" fill="url(#blueGrad)" font-family="system-ui, sans-serif" font-weight="700" font-size="20" text-anchor="middle" letter-spacing="2">CLOUD COMPUTING &amp; AI SPECIALIZATION</text>
+
+  <line x1="450" y1="345" x2="750" y2="345" stroke="url(#goldGrad)" stroke-width="2" opacity="0.8" />
+
+  <text x="600" y="390" fill="#94a3b8" font-family="system-ui, sans-serif" font-weight="400" font-size="16" text-anchor="middle">This credential certifies that</text>
+
+  <!-- Candidate Name -->
+  <text x="600" y="455" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="900" font-size="46" text-anchor="middle" letter-spacing="2">KARUPPASAMY M</text>
+
+  <text x="600" y="515" fill="#cbd5e1" font-family="system-ui, sans-serif" font-weight="400" font-size="17" text-anchor="middle">has successfully demonstrated proficiency in Azure Cloud Services, AI fundamentals, and developer community leadership.</text>
+
+  <!-- Gold Seal Emblem Center Bottom -->
+  <g transform="translate(600, 640)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="54" fill="url(#goldGrad)" stroke="#FEF08A" stroke-width="3" />
+    <circle cx="0" cy="0" r="46" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="1.5" />
+    <polygon points="0,-26 8,-8 26,-8 12,4 18,22 0,11 -18,22 -12,4 -26,-8 -8,-8" fill="url(#goldGrad)" />
+    <text x="0" y="34" fill="#FDE047" font-family="system-ui, sans-serif" font-weight="800" font-size="9" text-anchor="middle" letter-spacing="1.5">MICROSOFT</text>
+  </g>
+
+  <!-- Left Sign / Issuer -->
+  <g transform="translate(180, 680)">
+    <line x1="0" y1="0" x2="240" y2="0" stroke="#334155" stroke-width="1.5" />
+    <text x="120" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="14" text-anchor="middle">Satya Nadella</text>
+    <text x="120" y="44" fill="#64748b" font-family="system-ui, sans-serif" font-weight="500" font-size="12" text-anchor="middle">Chairman and CEO, Microsoft</text>
+  </g>
+
+  <!-- Right Date / Verification Code -->
+  <g transform="translate(780, 680)">
+    <line x1="0" y1="0" x2="240" y2="0" stroke="#334155" stroke-width="1.5" />
+    <text x="120" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="13" text-anchor="middle">Issued: 2026</text>
+    <text x="120" y="44" fill="#64748b" font-family="system-ui, sans-serif" font-weight="500" font-size="11" text-anchor="middle">Credential ID: MSFT-MLSA-2026-KM02</text>
+  </g>
+</svg>
