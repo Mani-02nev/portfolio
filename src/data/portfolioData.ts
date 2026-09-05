@@ -264,6 +264,7 @@ export const portfolioData = {
             issuer: 'Microsoft',
             date: '2026',
             link: '/certificates/microsoft.png',
+            image: '/certificates/microsoft.png',
             icon: 'Award',
             color: 'from-blue-500/20 to-cyan-600/20'
         },
@@ -272,6 +273,7 @@ export const portfolioData = {
             issuer: 'Google',
             date: '2025',
             link: '/certificates/gogle.jpeg',
+            image: '/certificates/gogle.jpeg',
             icon: 'Award',
             color: 'from-blue-500/20 to-blue-600/20'
         },
@@ -280,6 +282,7 @@ export const portfolioData = {
             issuer: 'VDart Inc.',
             date: '2025',
             link: '/certificates/vdart-internship.svg',
+            image: '/certificates/vdart-internship.svg',
             icon: 'Award',
             color: 'from-blue-500/20 to-sky-600/20'
         },
@@ -288,6 +291,7 @@ export const portfolioData = {
             issuer: 'Professional Development',
             date: '2025',
             link: '/certificates/KARUPPASAMY M (1).pdf',
+            image: '/certificates/cert_ml_internship.png',
             icon: 'ShieldCheck',
             color: 'from-emerald-500/20 to-emerald-600/20'
         },
@@ -296,6 +300,7 @@ export const portfolioData = {
             issuer: 'Technical Institute',
             date: '2025',
             link: '/certificates/KARUPPASAMY M (2).pdf',
+            image: '/certificates/cert_ai_internship.png',
             icon: 'FileText',
             color: 'from-purple-500/20 to-purple-600/20'
         },
@@ -304,6 +309,7 @@ export const portfolioData = {
             issuer: 'Novi Tech Certification',
             date: '2025',
             link: '/certificates/KARUPPASAMY M (3).pdf',
+            image: '/certificates/cert_data_analytics.png',
             icon: 'Award',
             color: 'from-orange-500/20 to-orange-600/20'
         },
@@ -312,6 +318,7 @@ export const portfolioData = {
             issuer: 'Technical Excellence',
             date: '2025',
             link: '/certificates/KARUPPASAMY M.pdf',
+            image: '/certificates/cert_ai_masterclass.png',
             icon: 'ShieldCheck',
             color: 'from-cyan-500/20 to-cyan-600/20'
         },
@@ -320,6 +327,7 @@ export const portfolioData = {
             issuer: 'Technical Excellence',
             date: '2025',
             link: '/certificates/HCL GUVI Certification - 1h6nM1sg71C5972067.png',
+            image: '/certificates/HCL GUVI Certification - 1h6nM1sg71C5972067.png',
             icon: 'ShieldCheck',
             color: 'from-blue-500/20 to-blue-600/20'
         },
@@ -328,6 +336,7 @@ export const portfolioData = {
             issuer: 'Google Cloud / Technical Excellence',
             date: '2025',
             link: '/certificates/5-Day AI Agents Intensive Course with Google.png',
+            image: '/certificates/5-Day AI Agents Intensive Course with Google.png',
             icon: 'Award',
             color: 'from-emerald-500/20 to-emerald-600/20'
         },
@@ -336,6 +345,7 @@ export const portfolioData = {
             issuer: 'Career Excellence Track',
             date: '2025',
             link: '/certificates/maang.png',
+            image: '/certificates/maang.png',
             icon: 'Brain',
             color: 'from-pink-500/20 to-rose-600/20'
         }

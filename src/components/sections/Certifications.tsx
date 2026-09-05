@@ -27,58 +27,87 @@ export const Certifications = () => {
 
     const renderCard = (cert: any, index: number) => {
         const Icon = iconMap[cert.icon] || Award;
+        const certImg = cert.image || cert.link;
 
         return (
             <div
                 key={`${cert.title}-${index}`}
                 onClick={() => setPreviewCert(cert)}
-                className="w-[320px] sm:w-[360px] md:w-[380px] shrink-0 p-1 cursor-pointer select-none group"
+                className="w-[330px] sm:w-[380px] md:w-[410px] shrink-0 p-2 cursor-pointer select-none group"
             >
                 {/* Glow wrap */}
-                <div className="relative h-full rounded-2xl transition-all duration-300 group-hover:-translate-y-1">
+                <div className="relative h-full rounded-2xl transition-all duration-300 group-hover:-translate-y-1.5">
                     <div className={`absolute -inset-0.5 bg-gradient-to-r ${cert.color} rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500`} />
 
-                    <div className="relative glass p-6 rounded-2xl h-full flex flex-col border border-white/10 bg-slate-950/80 backdrop-blur-xl group-hover:border-white/20 transition-all duration-300 shadow-xl">
-                        <div className="flex justify-between items-start mb-4">
-                            <div className="w-12 h-12 rounded-xl bg-charcoal-900 border border-white/10 flex items-center justify-center group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all duration-300">
-                                <Icon className="w-6 h-6 text-emerald-400" />
+                    <div className="relative glass rounded-2xl h-full flex flex-col border border-white/10 bg-slate-950/90 backdrop-blur-xl group-hover:border-white/25 transition-all duration-300 shadow-2xl overflow-hidden">
+                        
+                        {/* ── ACTUAL CERTIFICATE VISUAL DISPLAY ── */}
+                        <div className="relative w-full h-48 sm:h-52 bg-charcoal-950 overflow-hidden border-b border-white/10 flex items-center justify-center p-2.5">
+                            {/* Certificate background image */}
+                            <img
+                                src={certImg}
+                                alt={cert.title}
+                                className="w-full h-full object-contain rounded-lg transition-transform duration-500 group-hover:scale-105 shadow-md bg-white/5"
+                                loading="lazy"
+                            />
+
+                            {/* Top Badges */}
+                            <div className="absolute top-4 left-4 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/15 text-[11px] font-semibold text-emerald-400 shadow-lg">
+                                <Icon className="w-3.5 h-3.5 text-emerald-400" />
+                                <span>{cert.issuer}</span>
                             </div>
-                            <span className="text-[11px] font-bold text-gray-400 bg-white/5 border border-white/10 px-3 py-1 rounded-full">
+
+                            <div className="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/15 text-[10px] font-bold text-gray-300 shadow-lg">
                                 {cert.date}
-                            </span>
+                            </div>
+
+                            {/* Hover Overlay with Eye Prompt */}
+                            <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2">
+                                <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-500/90 text-black text-xs font-bold shadow-xl">
+                                    <Eye className="w-3.5 h-3.5" />
+                                    Click to View
+                                </span>
+                            </div>
                         </div>
 
-                        <h4 className="text-lg font-bold mb-1.5 font-display text-white group-hover:text-emerald-300 transition-colors line-clamp-2 leading-snug">
-                            {cert.title}
-                        </h4>
-                        <p className="text-emerald-400/90 text-xs font-semibold mb-5">{cert.issuer}</p>
+                        {/* Certificate Details & Actions */}
+                        <div className="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h4 className="text-base sm:text-lg font-bold font-display text-white group-hover:text-emerald-300 transition-colors line-clamp-1 leading-snug mb-1">
+                                    {cert.title}
+                                </h4>
+                                <p className="text-gray-400 text-xs font-medium">
+                                    Official Credential • Verified
+                                </p>
+                            </div>
 
-                        {/* Interactive Buttons: Preview vs Download */}
-                        <div className="mt-auto pt-4 flex items-center justify-between border-t border-white/10 gap-2">
-                            <button
-                                type="button"
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    setPreviewCert(cert);
-                                }}
-                                className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/20 px-3 py-1.5 rounded-lg transition-all"
-                            >
-                                <Eye className="w-3.5 h-3.5" />
-                                Preview
-                            </button>
+                            {/* Interactive Buttons: Preview vs Download */}
+                            <div className="mt-4 pt-3.5 flex items-center justify-between border-t border-white/10 gap-2">
+                                <button
+                                    type="button"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        setPreviewCert(cert);
+                                    }}
+                                    className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/20 px-3.5 py-1.5 rounded-lg transition-all"
+                                >
+                                    <Eye className="w-3.5 h-3.5" />
+                                    Preview
+                                </button>
 
-                            <a
-                                href={cert.link}
-                                download
-                                target="_blank"
-                                rel="noreferrer"
-                                onClick={(e) => e.stopPropagation()}
-                                className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/70 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 px-3 py-1.5 rounded-lg transition-all"
-                                title="Download Credential"
-                            >
-                                <Download className="w-3.5 h-3.5 text-white/80" />
-                                Download
-                            </a>
+                                <a
+                                    href={cert.link}
+                                    download
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    onClick={(e) => e.stopPropagation()}
+                                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-white/80 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 px-3.5 py-1.5 rounded-lg transition-all"
+                                    title="Download Credential"
+                                >
+                                    <Download className="w-3.5 h-3.5 text-emerald-400" />
+                                    Download
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -225,20 +254,12 @@ export const Certifications = () => {
                             </div>
 
                             {/* Modal Content Preview */}
-                            <div className="p-4 sm:p-6 overflow-auto flex-1 flex items-center justify-center bg-black/50 min-h-[350px] max-h-[60vh]">
-                                {previewCert.link.endsWith('.pdf') ? (
-                                    <iframe
-                                        src={previewCert.link}
-                                        title={previewCert.title}
-                                        className="w-full h-[500px] rounded-xl border border-white/10 shadow-lg"
-                                    />
-                                ) : (
-                                    <img
-                                        src={previewCert.link}
-                                        alt={previewCert.title}
-                                        className="max-h-[500px] w-auto max-w-full object-contain rounded-xl shadow-2xl border border-white/10"
-                                    />
-                                )}
+                            <div className="p-4 sm:p-6 overflow-auto flex-1 flex items-center justify-center bg-black/50 min-h-[350px] max-h-[65vh]">
+                                <img
+                                    src={previewCert.image || previewCert.link}
+                                    alt={previewCert.title}
+                                    className="max-h-[520px] w-auto max-w-full object-contain rounded-xl shadow-2xl border border-white/10"
+                                />
                             </div>
 
                             {/* Modal Footer with Download Action */}
