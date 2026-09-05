@@ -90,9 +90,9 @@ export const portfolioData = {
             company: 'Novi Tech Company',
             companyUrl: 'https://novitechrd.com/',
             location: 'Remote / Coimbatore',
-            period: 'Summer 2024',
+            period: '2024 – 2025',
             type: 'internship',
-            typeLabel: 'Internship',
+            typeLabel: 'Internship (1 Year)',
             typeColor: 'emerald',
             description: 'Led development of intelligent systems and interactive user interfaces for AI-driven predictive analytics tools at Novi Tech.',
             achievements: [
@@ -109,9 +109,9 @@ export const portfolioData = {
             company: 'Novi Tech Company',
             companyUrl: 'https://novitechrd.com/',
             location: 'Remote',
-            period: 'Dec 2023 – Jan 2024',
+            period: '2024 – 2025',
             type: 'internship',
-            typeLabel: 'Internship',
+            typeLabel: 'Internship (1 Year)',
             typeColor: 'orange',
             description: 'Intensive data analytics internship focused on exploratory data analysis (EDA), statistical modeling, and business intelligence dashboard development.',
             achievements: [
