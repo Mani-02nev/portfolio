@@ -281,8 +281,8 @@ export const portfolioData = {
             title: 'VDart AI & ML Internship',
             issuer: 'VDart Inc.',
             date: '2025',
-            link: '/certificates/vdart-internship.svg',
-            image: '/certificates/vdart-internship.svg',
+            link: '/certificates/vdart-internship.png',
+            image: '/certificates/vdart-internship.png',
             icon: 'Award',
             color: 'from-blue-500/20 to-sky-600/20'
         },

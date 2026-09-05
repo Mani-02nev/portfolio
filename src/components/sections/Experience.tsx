@@ -202,12 +202,12 @@ export const Experience = () => {
 
                                             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 pb-6 border-b border-white/[0.06]">
                                                 <div className="flex items-center gap-4">
-                                                    {/* Pure corporate white box for logos */}
-                                                    <div className="w-14 h-14 rounded-2xl overflow-hidden bg-white border border-white/[0.08] flex items-center justify-center p-3 shrink-0 shadow-md transition-transform duration-300 group-hover:scale-105">
+                                                    {/* Prominent corporate logo box */}
+                                                    <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-2xl sm:rounded-3xl overflow-hidden bg-white border border-white/20 flex items-center justify-center p-2.5 sm:p-3.5 md:p-4 shrink-0 shadow-xl shadow-black/40 transition-transform duration-300 group-hover:scale-110">
                                                         {logo ? (
                                                             <img src={logo} alt={exp.company} className="w-full h-full object-contain" />
                                                         ) : (
-                                                            <span className="font-bold text-[#070015] text-lg font-display">
+                                                            <span className="font-bold text-[#070015] text-xl sm:text-2xl font-display">
                                                                 {exp.company.charAt(0)}
                                                             </span>
                                                         )}

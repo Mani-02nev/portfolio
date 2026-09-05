@@ -12,18 +12,12 @@ const iconMap: Record<string, any> = {
 
 export const Certifications = () => {
     const [previewCert, setPreviewCert] = useState<any | null>(null);
-    const [isHoveredRow1, setIsHoveredRow1] = useState(false);
-    const [isHoveredRow2, setIsHoveredRow2] = useState(false);
 
     const allCerts = portfolioData.certifications || [];
     
     // Split into 2 balanced rows
     const row1 = allCerts.filter((_, idx) => idx % 2 === 0);
     const row2 = allCerts.filter((_, idx) => idx % 2 !== 0);
-
-    // Duplicate arrays for seamless infinite looping
-    const row1Doubled = [...row1, ...row1, ...row1];
-    const row2Doubled = [...row2, ...row2, ...row2];
 
     const renderCard = (cert: any, index: number) => {
         const Icon = iconMap[cert.icon] || Award;
@@ -154,55 +148,25 @@ export const Certifications = () => {
             </div>
 
             {/* ── ROW 1: Auto-Slide Left (Opposite Direction) ── */}
-            <div
-                className="relative w-full overflow-hidden mb-6"
-                onMouseEnter={() => setIsHoveredRow1(true)}
-                onMouseLeave={() => setIsHoveredRow1(false)}
-            >
+            <div className="relative w-full overflow-hidden mb-6 marquee-track">
                 {/* Side Fade Gradients */}
-                <div className="absolute left-0 inset-y-0 w-20 bg-gradient-to-r from-[#0d0221] to-transparent z-10 pointer-events-none" />
-                <div className="absolute right-0 inset-y-0 w-20 bg-gradient-to-l from-[#0d0221] to-transparent z-10 pointer-events-none" />
+                <div className="absolute left-0 inset-y-0 w-24 bg-gradient-to-r from-[#0d0221] to-transparent z-10 pointer-events-none" />
+                <div className="absolute right-0 inset-y-0 w-24 bg-gradient-to-l from-[#0d0221] to-transparent z-10 pointer-events-none" />
 
-                <motion.div
-                    className="flex gap-4 w-max"
-                    animate={{ x: isHoveredRow1 ? undefined : ['0%', '-50%'] }}
-                    transition={{
-                        x: {
-                            repeat: Infinity,
-                            repeatType: 'loop',
-                            duration: 35,
-                            ease: 'linear',
-                        },
-                    }}
-                >
-                    {row1Doubled.map((cert, idx) => renderCard(cert, idx))}
-                </motion.div>
+                <div className="animate-marquee-left gap-4">
+                    {[...row1, ...row1].map((cert, idx) => renderCard(cert, idx))}
+                </div>
             </div>
 
             {/* ── ROW 2: Auto-Slide Right (Opposite Direction) ── */}
-            <div
-                className="relative w-full overflow-hidden"
-                onMouseEnter={() => setIsHoveredRow2(true)}
-                onMouseLeave={() => setIsHoveredRow2(false)}
-            >
+            <div className="relative w-full overflow-hidden marquee-track">
                 {/* Side Fade Gradients */}
-                <div className="absolute left-0 inset-y-0 w-20 bg-gradient-to-r from-[#0d0221] to-transparent z-10 pointer-events-none" />
-                <div className="absolute right-0 inset-y-0 w-20 bg-gradient-to-l from-[#0d0221] to-transparent z-10 pointer-events-none" />
+                <div className="absolute left-0 inset-y-0 w-24 bg-gradient-to-r from-[#0d0221] to-transparent z-10 pointer-events-none" />
+                <div className="absolute right-0 inset-y-0 w-24 bg-gradient-to-l from-[#0d0221] to-transparent z-10 pointer-events-none" />
 
-                <motion.div
-                    className="flex gap-4 w-max"
-                    animate={{ x: isHoveredRow2 ? undefined : ['-50%', '0%'] }}
-                    transition={{
-                        x: {
-                            repeat: Infinity,
-                            repeatType: 'loop',
-                            duration: 35,
-                            ease: 'linear',
-                        },
-                    }}
-                >
-                    {row2Doubled.map((cert, idx) => renderCard(cert, idx))}
-                </motion.div>
+                <div className="animate-marquee-right gap-4">
+                    {[...row2, ...row2].map((cert, idx) => renderCard(cert, idx))}
+                </div>
             </div>
 
             {/* ── CLEAN INTERACTIVE PREVIEW MODAL (NO AUTO-DOWNLOAD ON CLICK) ── */}
