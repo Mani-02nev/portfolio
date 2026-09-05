@@ -71,7 +71,7 @@ export const portfolioData = {
             company: 'VDart Inc.',
             companyUrl: 'https://www.vdart.com/',
             location: 'Onsite / Tiruchirappalli',
-            period: '2025',
+            period: '2026',
             type: 'internship',
             typeLabel: 'Internship',
             typeColor: 'blue',
@@ -83,7 +83,7 @@ export const portfolioData = {
                 'Collaborated with senior engineering teams on data preprocessing, feature engineering, and model optimization.'
             ],
             tech: ['Python', 'Machine Learning', 'NLP', 'Computer Vision', 'FastAPI', 'TensorFlow'],
-            certificateUrl: '/certificates/vdart-internship.svg'
+            certificateUrl: '/certificates/vdart-internship.png'
         },
         {
             role: 'AI & ML Engineering Intern',
@@ -280,7 +280,7 @@ export const portfolioData = {
         {
             title: 'VDart AI & ML Internship',
             issuer: 'VDart Inc.',
-            date: '2025',
+            date: '2026',
             link: '/certificates/vdart-internship.png',
             image: '/certificates/vdart-internship.png',
             icon: 'Award',
